@@ -618,6 +618,729 @@ List<ProgramFaculty> getDemoFaculties(BuildContext context) {
               )
             ],
           ),
+          ProgramTrack(
+            name: S.of(context).internationalRelations,
+            level: 'Licence 3',
+            semesters: [
+              ProgramSemester(label: 'S1', unit: [
+                ProgramUnit(label: S.of(context).basicUnit, modules: [
+                  ProgramModule(
+                    name: 'المقارنة الجديدة في العلاقات الدولية',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'تحليل السياسة الخارجية 1',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'تاريخ العلاقات الدولية',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                  ProgramModule(
+                    name: 'تقنيات التفاوض',
+                    coef: 2,
+                    credits: 4,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  )
+                ]),
+                ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                  ProgramModule(
+                    name: 'قانون الدولي العام',
+                    coef: 2,
+                    credits: 2,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                  ProgramModule(
+                    name:
+                    'التنافس الدولي في افريقيا/التنافس الدولي في الشرق الاوسط',
+                    coef: 2,
+                    credits: 2,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  )
+                ]),
+                ProgramUnit(
+                  label: S.of(context).horizontalUnit,
+                  modules: [
+                    ProgramModule(
+                      name: 'مقاولاتية',
+                      coef: 2,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'انجليزية ',
+                      coef: 2,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                  ],
+                )
+              ]),
+
+              // S2
+              ProgramSemester(
+                label: 'S2',
+                unit: [
+                  ProgramUnit(label: S.of(context).basicUnit, modules: [
+                    ProgramModule(
+                      name: 'تحليل النزاعات الدولية',
+                      coef: 3,
+                      credits: 6,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'تحليل السياسات الخارجية 2',
+                      coef: 3,
+                      credits: 6,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'الدبلوماسية والتعاون',
+                      coef: 3,
+                      credits: 6,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    )
+                  ]),
+                  ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                    ProgramModule(
+                      name: 'تحليل الوثائق الدبلوماسية',
+                      coef: 3,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    )
+                  ]),
+                  ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                    ProgramModule(
+                      name: 'جيوسياسية العلاقات الدولية',
+                      coef: 2,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 0),
+                        ProgramComponent('EXAM', 100),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'الفاعلون غير الحكوميون في العلاقات الدولية/ الجزائر في محيطها الاقليمي والدولي',
+                      coef: 2,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 0),
+                        ProgramComponent('EXAM', 100),
+                      ],
+                    )
+                  ]),
+                  ProgramUnit(label: S.of(context).horizontalUnit, modules: [
+                    ProgramModule(
+                      name: 'اداب واحلاقيات المهنة',
+                      coef: 2,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'إنجليزية ',
+                      coef: 2,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 100),
+                        ProgramComponent('EXAM', 0),
+                      ],
+                    ),
+                  ])
+                ],
+              )
+            ],
+          ),
+          ///////////ماستر///////////////
+          ProgramTrack(
+            name: S.of(context).internationalCooperation,
+            level: 'Master 1',
+            semesters: [
+              ProgramSemester(label: 'S1', unit: [
+                ProgramUnit(label: S.of(context).basicUnit, modules: [
+                  ProgramModule(
+                    name: 'مدخل للتعاون الدولي',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'نظريات وسياسات التعاون الدولي',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'هيئات التعاون الدولي',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                  ProgramModule(
+                    name: 'منهجية البحث العلمي 1',
+                    coef: 2,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'تحرير التقارير',
+                    coef: 1,
+                    credits: 3,
+                    components: [
+                      ProgramComponent('TD', 100),
+                      ProgramComponent('EXAM', 0),
+                    ],
+                  )
+                ]),
+                ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                  ProgramModule(
+                    name: 'اخلاقيات البحث العلمي',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'العولمة والحكومة العالمية',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(
+                  label: S.of(context).horizontalUnit,
+                  modules: [
+                    ProgramModule(
+                      name: 'لغة اجنبية 1',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 0),
+                        ProgramComponent('EXAM', 100),
+                      ],
+                    ),
+                  ],
+                )
+              ]),
+
+              // S2
+              ProgramSemester(label: 'S2', unit: [
+                ProgramUnit(label: S.of(context).basicUnit, modules: [
+                  ProgramModule(
+                    name: 'التعاون الدولي وبناء السلام',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'السياسات الخارجية والعلاقات الدبلوماسية',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'التكتلات والمنظمات الدولية',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                  ProgramModule(
+                    name: 'منهجية البحث العلمي 2',
+                    coef: 2,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'تكنلوجيا الاعلام والاتصال',
+                    coef: 1,
+                    credits: 3,
+                    components: [
+                      ProgramComponent('TD', 100),
+                      ProgramComponent('EXAM', 0),
+                    ],
+                  )
+                ]),
+                ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                  ProgramModule(
+                    name: 'المفاوضات الدولية',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'التعاون الدولي في مجال الطاقة',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(
+                  label: S.of(context).horizontalUnit,
+                  modules: [
+                    ProgramModule(
+                      name: 'لغة اجنبيةة 2',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 0),
+                        ProgramComponent('EXAM', 100),
+                      ],
+                    ),
+                  ],
+                )
+              ]),
+
+            ],
+
+          ),
+          ProgramTrack(
+            name: S.of(context).internationalCooperation,
+            level: 'Master 2',
+            semesters: [
+              ProgramSemester(label: 'S1', unit: [
+                ProgramUnit(label: S.of(context).basicUnit, modules: [
+                  ProgramModule(
+                    name: 'التعاون الدولي والامن في المتوسط',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'النظم الدبلوماسية والقنصلية',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'التعاون الدولي والتنمية المستدامة',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                  ProgramModule(
+                    name: 'منهجية اعداد مدكرة الماستر',
+                    coef: 2,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'المشروع المهني والشخصي',
+                    coef: 1,
+                    credits: 3,
+                    components: [
+                      ProgramComponent('TD', 100),
+                      ProgramComponent('EXAM', 0),
+                    ],
+                  )
+                ]),
+                ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                  ProgramModule(
+                    name: 'التعاون الدولي وحقوق الانسان',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'التعاون الدولي في مجال الهجرة واللجوء',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(
+                  label: S.of(context).horizontalUnit,
+                  modules: [
+                    ProgramModule(
+                      name: 'لغة اجنبية 3',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 0),
+                        ProgramComponent('EXAM', 100),
+                      ],
+                    ),
+                  ],
+                )
+              ]),
+            ],
+          ),
+
+          ProgramTrack(
+            name: S.of(context).localAdministration,
+            level: 'Master 1',
+            semesters: [
+              ProgramSemester(label: 'S1', unit: [
+                ProgramUnit(label: S.of(context).basicUnit, modules: [
+                  ProgramModule(
+                    name: 'نظرية الادارة المحلية',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'القانون الاداري',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'المالية المحلية',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                  ProgramModule(
+                    name: 'منهجية البحث العلمي 1',
+                    coef: 2,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'تقنيات التحرير الاداري',
+                    coef: 1,
+                    credits: 3,
+                    components: [
+                      ProgramComponent('TD', 100),
+                      ProgramComponent('EXAM', 0),
+                    ],
+                  )
+                ]),
+                ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                  ProgramModule(
+                    name: 'ملتقى الحكومة الالكترونية',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'ملتقى الوظيفة العامة بالجزائر',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(
+                  label: S.of(context).horizontalUnit,
+                  modules: [
+                    ProgramModule(
+                      name: 'لغة اجنبية 1 & البرمجة',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 0),
+                        ProgramComponent('EXAM', 100),
+                      ],
+                    ),
+                  ],
+                )
+              ]),
+
+              // S2
+              ProgramSemester(label: 'S2', unit: [
+                ProgramUnit(label: S.of(context).basicUnit, modules: [
+                  ProgramModule(
+                    name: 'الادارة العامة',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'صنع وتنفيد السياسات العامة',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'صناعة القرارات وادرة الازمات',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                  ProgramModule(
+                    name: 'منهجية البحث العلمي 2',
+                    coef: 2,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'تكنلوجيا الاعلام والاتصال',
+                    coef: 1,
+                    credits: 3,
+                    components: [
+                      ProgramComponent('TD', 100),
+                      ProgramComponent('EXAM', 0),
+                    ],
+                  )
+                ]),
+                ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                  ProgramModule(
+                    name: 'قانون وتشريع العمل',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'ملتقى الجماعات المحلية',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(
+                  label: S.of(context).horizontalUnit,
+                  modules: [
+                    ProgramModule(
+                      name: 'لغة اجنبيةة 2',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 0),
+                        ProgramComponent('EXAM', 100),
+                      ],
+                    ),
+                  ],
+                )
+              ]),
+
+            ],
+
+          ),
+          ProgramTrack(
+            name: S.of(context).localAdministration,
+            level: 'Master 2',
+            semesters: [
+              ProgramSemester(label: 'S1', unit: [
+                ProgramUnit(label: S.of(context).basicUnit, modules: [
+                  ProgramModule(
+                    name: 'سياسات التنمية المحلية',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'الحكم الراشد والحوكمة المحلية',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'ادارة العلاقات العامة',
+                    coef: 3,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                  ProgramModule(
+                    name: 'منهجية اعداد مدكرة الماستر',
+                    coef: 2,
+                    credits: 6,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'المشروع المهني والشخصي',
+                    coef: 1,
+                    credits: 3,
+                    components: [
+                      ProgramComponent('TD', 100),
+                      ProgramComponent('EXAM', 0),
+                    ],
+                  )
+                ]),
+                ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                  ProgramModule(
+                    name: 'ملتقى ادارة المدينة والتهيئة العمرانية',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'اصلاح الادارة ومحاربة الفساد',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(
+                  label: S.of(context).horizontalUnit,
+                  modules: [
+                    ProgramModule(
+                      name: 'لغة اجنبية 3',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 0),
+                        ProgramComponent('EXAM', 100),
+                      ],
+                    ),
+                  ],
+                )
+              ]),
+            ],
+          ),
         ],
       ),
       ProgramMajor(
@@ -3464,6 +4187,8 @@ List<ProgramFaculty> getDemoFaculties(BuildContext context) {
         ],
       )
     ]),
+
+
     ProgramFaculty(name: S.of(context).facultyEconomics, majors: [
       // ===========================
       // السنة 1 – قسم التعليم الأساسي
@@ -8678,6 +9403,1583 @@ List<ProgramFaculty> getDemoFaculties(BuildContext context) {
         ],
       ),
     ]),
+
+
+    ProgramFaculty(name: 'كلية الادب واللغات الاجنبية', majors: [
+      // ===========================
+      // قسم اللغة والادب العربي
+      // ===========================
+      ProgramMajor(
+        name: 'قسم اللغة والادب العربي',
+        tracks: [
+          ProgramTrack(
+            name: 'Licence 1',
+            level: 'Licence 1',
+            semesters: [
+              ProgramSemester(label: 'S1',
+                  unit: [
+                ProgramUnit(label: S.of(context).basicUnit, modules: [
+                  ProgramModule(
+                    name: 'نص ادبي قديم',
+                    coef: 2,
+                    credits: 5,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'نقد ادبي قديم 1',
+                    coef: 2,
+                    credits: 4,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'علم الصرف',
+                    coef: 2,
+                    credits: 5,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'بلاغة عربية',
+                    coef: 2,
+                    credits: 4,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+
+                ]),
+                ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                  ProgramModule(
+                    name: 'تقنيات البحث 1',
+                    coef: 2,
+                    credits:3,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: ' تقنيات التعبير الشفوي',
+                    coef: 2,
+                    credits: 3,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'عروض وموسيقى الشعر',
+                    coef: 2,
+                    credits: 3,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                  ProgramModule(
+                    name: 'علوم القرءان',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'لغة اجنبية',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 0),
+                      ProgramComponent('EXAM', 100),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(
+                  label: S.of(context).horizontalUnit,
+                  modules: [
+                    ProgramModule(
+                      name: 'اعلام الي 1',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 100),
+                        ProgramComponent('EXAM', 0),
+                      ],
+                    ),
+                  ],
+                )
+              ]),
+
+              // S2
+              ProgramSemester(
+                label: 'S2',
+                unit: [
+                  ProgramUnit(label: S.of(context).basicUnit, modules: [
+                    ProgramModule(
+                      name: 'نص ادبي قديم',
+                      coef: 2,
+                      credits: 5,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'نقد ادبي قديم 2',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'علم النحو',
+                      coef: 2,
+                      credits: 5,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'فقه اللغة',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+
+                  ]),
+                  ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                    ProgramModule(
+                      name: 'تقنيات البحث 2',
+                      coef: 2,
+                      credits:3,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: '  تقنيات التعبير الكتابي',
+                      coef: 2,
+                      credits: 3,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'مصادر اللغة والادب والنقد',
+                      coef: 2,
+                      credits: 3,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                    ProgramModule(
+                      name: 'تاريخ الحضارة الانسانية',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 0),
+                        ProgramComponent('EXAM', 100),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'لغة اجنبية',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 0),
+                        ProgramComponent('EXAM', 100),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(
+                    label: S.of(context).horizontalUnit,
+                    modules: [
+                      ProgramModule(
+                        name: 'اعلام الي 2',
+                        coef: 1,
+                        credits: 1,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
+
+        ],
+      ),
+      // ============================================
+      //  قسم الادب الفرنسي
+      // ============================================
+      ProgramMajor(
+        name:'قسم اللغو والادب الفرنسي',
+        tracks: [
+          // ============================================
+          // السنة 1
+          // ============================================
+          ProgramTrack(
+            name: 'Licence 1',
+            level: '',
+            semesters: [
+              ProgramSemester(label: 'S1',
+                  unit: [
+                ProgramUnit(label: S.of(context).basicUnit, modules: [
+                  ProgramModule(
+                    name: 'فهم وتعبير كتابيان 1',
+                    coef: 2,
+                    credits: 4,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'فهم وتعبير شفويان 1',
+                    coef: 2,
+                    credits: 4,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'نحو فرنسي 1',
+                    coef: 2,
+                    credits: 4,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'اللسانيات والصوتيات 1',
+                    coef: 2,
+                    credits: 4,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'دراسة نصوص ادبية 1',
+                    coef: 1,
+                    credits: 2,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                  ProgramModule(
+                    name: 'تقنيات العمل الجامعي 1',
+                    coef: 2,
+                    credits: 4,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'قراءة ودراسة النصوص 1',
+                    coef: 2,
+                    credits: 4,
+                    components: [
+                      ProgramComponent('TD', 100),
+                      ProgramComponent('EXAM', 0),
+                    ],
+                  ),
+                  ProgramModule(
+                    name: 'تكنولوجيات الاعلام والاتصال والتعليم الالكتروني 1',
+                    coef: 1,
+                    credits: 1,
+                    components: [
+                      ProgramComponent('TD', 100),
+                      ProgramComponent('EXAM', 0),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                  ProgramModule(
+                    name: 'حضارات 1',
+                    coef: 2,
+                    credits: 2,
+                    components: [
+                      ProgramComponent('TD', 40),
+                      ProgramComponent('EXAM', 60),
+                    ],
+                  ),
+                ]),
+                ProgramUnit(
+                  label: S.of(context).horizontalUnit,
+                  modules: [
+                    ProgramModule(
+                      name: 'لغة اجنبية 1',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 100),
+                        ProgramComponent('EXAM', 0),
+                      ],
+                    ),
+                  ],
+                )
+              ]),
+
+              // S2
+              ProgramSemester(
+                label: 'S2',
+                unit: [
+                  ProgramUnit(label: S.of(context).basicUnit, modules: [
+                    ProgramModule(
+                      name: 'فهم وتعبير كتابيان 2',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'فهم وتعبير شفويان 2',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'نحو فرنسي 2',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'اللسانيات والصوتيات 2',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'دراسة نصوص ادبية 2',
+                      coef: 1,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                    ProgramModule(
+                      name: 'تقنيات العمل الجامعي 2',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'قراءة ودراسة النصوص 2',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 100),
+                        ProgramComponent('EXAM', 0),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'تكنلوجيات الاعلام والاتصال والتعليم الالكتروني 2',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 100),
+                        ProgramComponent('EXAM', 0),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                    ProgramModule(
+                      name: 'حضارات 2',
+                      coef: 2,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(
+                    label: S.of(context).horizontalUnit,
+                    modules: [
+                      ProgramModule(
+                        name: 'لغة اجنبية 2',
+                        coef: 1,
+                        credits: 1,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
+          // //========================================================
+          // //===============السنة 2===============
+          ProgramTrack(
+            name: 'Licence 2',
+            level: '',
+            semesters: [
+              ProgramSemester(label: 'S1',
+                  unit: [
+                    ProgramUnit(label: S.of(context).basicUnit, modules: [
+                      ProgramModule(
+                        name: 'فهم وتعبير كتابيان 3',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'فهم وتعبير شفويان 3',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'نحو فرنسي 3',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'اللسانيات والصوتيات 3',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'دراسة نصوص ادبية 3',
+                        coef: 1,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                      ProgramModule(
+                        name: 'تقنيات العمل الجامعي 3',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'قراءة ودراسة النصوص 3',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'مهارات القراءة والكتابة الرقمية 1',
+                        coef: 1,
+                        credits: 1,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                      ProgramModule(
+                        name: 'حضارات 3',
+                        coef: 2,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(
+                      label: S.of(context).horizontalUnit,
+                      modules: [
+                        ProgramModule(
+                          name: 'لغة اجنبية 3',
+                          coef: 1,
+                          credits: 1,
+                          components: [
+                            ProgramComponent('TD', 100),
+                            ProgramComponent('EXAM', 0),
+                          ],
+                        ),
+                      ],
+                    )
+                  ]),
+
+              // S2
+              ProgramSemester(
+                label: 'S2',
+                unit: [
+                  ProgramUnit(label: S.of(context).basicUnit, modules: [
+                    ProgramModule(
+                      name: 'فهم وتعبير كتابيان 4',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'فهم وتعبير شفويان 4',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'نحو فرنسي 4',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'اللسانيات والصوتيات 4',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'دراسة نصوص ادبية 4',
+                      coef: 1,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                    ProgramModule(
+                      name: 'تقنيات العمل الجامعي 4',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'قراءة ودراسة النصوص 4',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 100),
+                        ProgramComponent('EXAM', 0),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'مهارات القراءة والكتابة الرقمية 2',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 100),
+                        ProgramComponent('EXAM', 0),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                    ProgramModule(
+                      name: 'حضارات 4',
+                      coef: 2,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(
+                    label: S.of(context).horizontalUnit,
+                    modules: [
+                      ProgramModule(
+                        name: 'لغة اجنبية 4',
+                        coef: 1,
+                        credits: 1,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
+          // //========================================================
+          // //===============السنة الثالثة ===============
+          ProgramTrack(
+            name: 'Licence 1',
+            level: '',
+            semesters: [
+              ProgramSemester(label: 'S1',
+                  unit: [
+                    ProgramUnit(label: S.of(context).basicUnit, modules: [
+                      ProgramModule(
+                        name: 'لسانيات 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'الادب نظريات وممارسات 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'حضارة وثقافة والتفاعل الثقافي 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'مدخل الى التعليمة 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'لغات 1',
+                        coef: 1,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                      ProgramModule(
+                        name: 'منهجية البحث الجامعي 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'ورشة القراءة والكتابة 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'ممارسة التواصل الشفوي 1',
+                        coef: 1,
+                        credits: 1,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                      ProgramModule(
+                        name: 'الترجمة 1',
+                        coef: 2,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(
+                      label: S.of(context).horizontalUnit,
+                      modules: [
+                        ProgramModule(
+                          name: 'مقاولاتية 1',
+                          coef: 1,
+                          credits: 1,
+                          components: [
+                            ProgramComponent('TD', 100),
+                            ProgramComponent('EXAM', 0),
+                          ],
+                        ),
+                      ],
+                    )
+                  ]),
+
+              // S2
+              ProgramSemester(
+                label: 'S2',
+                  unit: [
+                    ProgramUnit(label: S.of(context).basicUnit, modules: [
+                      ProgramModule(
+                        name: 'لسانيات 2',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'الادب نظريات وممارسات 2',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'حضارة وثقافة والتفاعل الثقافي 2',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'مدخل الى التعليمة 2',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'لغات 2',
+                        coef: 1,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                      ProgramModule(
+                        name: 'منهجية البحث الجامعي 2',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'ورشة القراءة والكتابة 2',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'ممارسة التواصل الشفوي 2',
+                        coef: 1,
+                        credits: 1,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                      ProgramModule(
+                        name: 'الترجمة 2',
+                        coef: 2,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(
+                      label: S.of(context).horizontalUnit,
+                      modules: [
+                        ProgramModule(
+                          name: 'مقاولاتية 2',
+                          coef: 1,
+                          credits: 1,
+                          components: [
+                            ProgramComponent('TD', 100),
+                            ProgramComponent('EXAM', 0),
+                          ],
+                        ),
+                      ],
+                    )
+                  ]
+              )
+            ],
+          ),
+
+        ],
+      ),
+      // ============================================
+      //  قسم الادب الانجليزي
+      // ============================================
+      ProgramMajor(
+        name: 'قسم اللغة والادب الانجليزي',
+        tracks: [
+// ============================================
+          // السنة 1
+          // ============================================
+          ProgramTrack(
+            name: 'Licence 1',
+            level: '',
+            semesters: [
+              ProgramSemester(label: 'S1',
+                  unit: [
+                    ProgramUnit(label: S.of(context).basicUnit, modules: [
+                      ProgramModule(
+                        name: 'فهم وتعبير كتابيان 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'فهم وتعبير شفويان 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'نحو انجليزي 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'اللسانيات والصوتيات 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'دراسة نصوص ادبية 1',
+                        coef: 1,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                      ProgramModule(
+                        name: 'تقنيات العمل الجامعي 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'قراءة ودراسة النصوص 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'تكنولوجيات الاعلام والاتصال والتعليم الالكتروني 1',
+                        coef: 1,
+                        credits: 1,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                      ProgramModule(
+                        name: 'حضارات 1',
+                        coef: 2,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(
+                      label: S.of(context).horizontalUnit,
+                      modules: [
+                        ProgramModule(
+                          name: 'لغة اجنبية 1',
+                          coef: 1,
+                          credits: 1,
+                          components: [
+                            ProgramComponent('TD', 100),
+                            ProgramComponent('EXAM', 0),
+                          ],
+                        ),
+                      ],
+                    )
+                  ]),
+
+              // S2
+              ProgramSemester(
+                label: 'S2',
+                unit: [
+                  ProgramUnit(label: S.of(context).basicUnit, modules: [
+                    ProgramModule(
+                      name: 'فهم وتعبير كتابيان 2',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'فهم وتعبير شفويان 2',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'نحو انجليزي 2',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'اللسانيات والصوتيات 2',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'دراسة نصوص ادبية 2',
+                      coef: 1,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                    ProgramModule(
+                      name: 'تقنيات العمل الجامعي 2',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'قراءة ودراسة النصوص 2',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 100),
+                        ProgramComponent('EXAM', 0),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'تكنلوجيات الاعلام والاتصال والتعليم الالكتروني 2',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 100),
+                        ProgramComponent('EXAM', 0),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                    ProgramModule(
+                      name: 'حضارات 2',
+                      coef: 2,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(
+                    label: S.of(context).horizontalUnit,
+                    modules: [
+                      ProgramModule(
+                        name: 'لغة اجنبية 2',
+                        coef: 1,
+                        credits: 1,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
+          // //========================================================
+          // //===============السنة 2===============
+          ProgramTrack(
+            name: 'Licence 2',
+            level: '',
+            semesters: [
+              ProgramSemester(label: 'S1',
+                  unit: [
+                    ProgramUnit(label: S.of(context).basicUnit, modules: [
+                      ProgramModule(
+                        name: 'فهم وتعبير كتابيان 3',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'فهم وتعبير شفويان 3',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'نحو انجليزي 3',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'اللسانيات والصوتيات 3',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'دراسة نصوص ادبية 3',
+                        coef: 1,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                      ProgramModule(
+                        name: 'تقنيات العمل الجامعي 3',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'قراءة ودراسة النصوص 3',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'مهارات القراءة والكتابة الرقمية 1',
+                        coef: 1,
+                        credits: 1,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                      ProgramModule(
+                        name: 'حضارات 3',
+                        coef: 2,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(
+                      label: S.of(context).horizontalUnit,
+                      modules: [
+                        ProgramModule(
+                          name: 'لغة اجنبية 3',
+                          coef: 1,
+                          credits: 1,
+                          components: [
+                            ProgramComponent('TD', 100),
+                            ProgramComponent('EXAM', 0),
+                          ],
+                        ),
+                      ],
+                    )
+                  ]),
+
+              // S2
+              ProgramSemester(
+                label: 'S2',
+                unit: [
+                  ProgramUnit(label: S.of(context).basicUnit, modules: [
+                    ProgramModule(
+                      name: 'فهم وتعبير كتابيان 4',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'فهم وتعبير شفويان 4',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'نحو انجليزي 4',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'اللسانيات والصوتيات 4',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'دراسة نصوص ادبية 4',
+                      coef: 1,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                    ProgramModule(
+                      name: 'تقنيات العمل الجامعي 4',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'قراءة ودراسة النصوص 4',
+                      coef: 2,
+                      credits: 4,
+                      components: [
+                        ProgramComponent('TD', 100),
+                        ProgramComponent('EXAM', 0),
+                      ],
+                    ),
+                    ProgramModule(
+                      name: 'مهارات القراءة والكتابة الرقمية 2',
+                      coef: 1,
+                      credits: 1,
+                      components: [
+                        ProgramComponent('TD', 100),
+                        ProgramComponent('EXAM', 0),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                    ProgramModule(
+                      name: 'حضارات 4',
+                      coef: 2,
+                      credits: 2,
+                      components: [
+                        ProgramComponent('TD', 40),
+                        ProgramComponent('EXAM', 60),
+                      ],
+                    ),
+                  ]),
+                  ProgramUnit(
+                    label: S.of(context).horizontalUnit,
+                    modules: [
+                      ProgramModule(
+                        name: 'لغة اجنبية 4',
+                        coef: 1,
+                        credits: 1,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
+          // //========================================================
+          // //===============السنة الثالثة ===============
+          ProgramTrack(
+            name: 'Licence 1',
+            level: '',
+            semesters: [
+              ProgramSemester(label: 'S1',
+                  unit: [
+                    ProgramUnit(label: S.of(context).basicUnit, modules: [
+                      ProgramModule(
+                        name: 'لسانيات 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'الادب نظريات وممارسات 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'حضارة وثقافة والتفاعل الثقافي 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'مدخل الى التعليمة 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'لغات 1',
+                        coef: 1,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                      ProgramModule(
+                        name: 'منهجية البحث الجامعي 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'ورشة القراءة والكتابة 1',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'ممارسة التواصل الشفوي 1',
+                        coef: 1,
+                        credits: 1,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                      ProgramModule(
+                        name: 'الترجمة 1',
+                        coef: 2,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(
+                      label: S.of(context).horizontalUnit,
+                      modules: [
+                        ProgramModule(
+                          name: 'مقاولاتية 1',
+                          coef: 1,
+                          credits: 1,
+                          components: [
+                            ProgramComponent('TD', 100),
+                            ProgramComponent('EXAM', 0),
+                          ],
+                        ),
+                      ],
+                    )
+                  ]),
+
+              // S2
+              ProgramSemester(
+                  label: 'S2',
+                  unit: [
+                    ProgramUnit(label: S.of(context).basicUnit, modules: [
+                      ProgramModule(
+                        name: 'لسانيات 2',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'الادب نظريات وممارسات 2',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'حضارة وثقافة والتفاعل الثقافي 2',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'مدخل الى التعليمة 2',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'لغات 2',
+                        coef: 1,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).methodologicalUnit, modules: [
+                      ProgramModule(
+                        name: 'منهجية البحث الجامعي 2',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'ورشة القراءة والكتابة 2',
+                        coef: 2,
+                        credits: 4,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                      ProgramModule(
+                        name: 'ممارسة التواصل الشفوي 2',
+                        coef: 1,
+                        credits: 1,
+                        components: [
+                          ProgramComponent('TD', 100),
+                          ProgramComponent('EXAM', 0),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(label: S.of(context).exploratoryUnit, modules: [
+                      ProgramModule(
+                        name: 'الترجمة 2',
+                        coef: 2,
+                        credits: 2,
+                        components: [
+                          ProgramComponent('TD', 40),
+                          ProgramComponent('EXAM', 60),
+                        ],
+                      ),
+                    ]),
+                    ProgramUnit(
+                      label: S.of(context).horizontalUnit,
+                      modules: [
+                        ProgramModule(
+                          name: 'مقاولاتية 2',
+                          coef: 1,
+                          credits: 1,
+                          components: [
+                            ProgramComponent('TD', 100),
+                            ProgramComponent('EXAM', 0),
+                          ],
+                        ),
+                      ],
+                    )
+                  ]
+              )
+            ],
+          ),
+
+
+        ],
+      ),
+
+    ]),
+
+
     ProgramFaculty(name: ' Coming soon', majors: [])
 
   ];

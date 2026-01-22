@@ -110,7 +110,7 @@
 ,"internationalEconomics": "Économie internationale"
 ,"noSubjectsThisSemester": "Aucune matière dans ce semestre."
 ,"credits": "Crédits :",
-  "coefficient": "Coefficient :"
+  "coefficient": "Coef :"
 ,"close": "Fermer"
 ,"studyResults": "Résultats d'étude",
   "notesTdTpExam": "Notes (TD/TP/Exam)"
@@ -135,6 +135,31 @@
   "legalProfessionsLaw": "Droit des professions juridiques et judiciaires",
   "maritimePortLaw": "Droit maritime et portuaire",
   "energyMiningLaw": "Droit de l’énergie et des mines",
-  "taxLaw": "Droit fiscal"
+  "taxLaw": "Droit fiscal",
+  "internationalRelations": "Relations internationales",
+  "internationalCooperation": "Coopération internationale",
+  "localAdministration": "Administration locale",
+  "contactUs": "Contactez-nous",
+  "report": "Signaler",
+  "blockAccount": "Bloquer le compte",
+  "followComment": "Suivre le commentaire",
+  "copyText": "Copier le texte",
+  "share": "Partager",
+  "hide": "Masquer",
+  "savePost": "Enregistrer la publication",
+  "university": "University",
+  "faculty": "Faculty",
+  "department": "Department",
+  "major": "Major",
+  "mood": "Humeur",
+  "name": "Nom",
+  "posts": "Publications",
+  "comments": "Commentaires",
+  "profile": "Profile",
+  "following": "Following",
+  "userInfo": "User Information"
+
+
+
 
 }

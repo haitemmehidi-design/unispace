@@ -51,6 +51,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Département de l\'enseignement de base",
     ),
     "basicUnit": MessageLookupByLibrary.simpleMessage("Unité fondamentale"),
+    "blockAccount": MessageLookupByLibrary.simpleMessage("Bloquer le compte"),
     "businessAdministration": MessageLookupByLibrary.simpleMessage(
       "Administration des affaires",
     ),
@@ -63,7 +64,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "chooseTheme": MessageLookupByLibrary.simpleMessage("Choisir le thème"),
     "clipboard": MessageLookupByLibrary.simpleMessage("Presse-papiers"),
     "close": MessageLookupByLibrary.simpleMessage("Fermer"),
-    "coefficient": MessageLookupByLibrary.simpleMessage("Coefficient :"),
+    "coefficient": MessageLookupByLibrary.simpleMessage("Coef :"),
     "comment": MessageLookupByLibrary.simpleMessage("Commentaire"),
     "comments": MessageLookupByLibrary.simpleMessage("Commentaires"),
     "commentsCount": m0,
@@ -75,7 +76,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "commonCore": MessageLookupByLibrary.simpleMessage("Tronc commun"),
     "community": MessageLookupByLibrary.simpleMessage("Communauté"),
+    "contactUs": MessageLookupByLibrary.simpleMessage("Contactez-nous"),
     "content": MessageLookupByLibrary.simpleMessage("Contenu"),
+    "copyText": MessageLookupByLibrary.simpleMessage("Copier le texte"),
     "corporateFinance": MessageLookupByLibrary.simpleMessage(
       "Finance d\'entreprise",
     ),
@@ -92,6 +95,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "dark": MessageLookupByLibrary.simpleMessage("Sombre"),
     "darkMode": MessageLookupByLibrary.simpleMessage("Mode sombre"),
+    "department": MessageLookupByLibrary.simpleMessage("Department"),
     "economics": MessageLookupByLibrary.simpleMessage("Sciences économiques"),
     "economicsDept": MessageLookupByLibrary.simpleMessage(
       "Département des sciences économiques",
@@ -104,6 +108,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Unité exploratoire",
     ),
     "faculties": MessageLookupByLibrary.simpleMessage("Facultés"),
+    "faculty": MessageLookupByLibrary.simpleMessage("Faculty"),
     "facultyEconomics": MessageLookupByLibrary.simpleMessage(
       "Faculté des sciences économiques, commerciales et des sciences de gestion",
     ),
@@ -124,7 +129,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "financialManagement": MessageLookupByLibrary.simpleMessage(
       "Gestion financière",
     ),
+    "followComment": MessageLookupByLibrary.simpleMessage(
+      "Suivre le commentaire",
+    ),
+    "following": MessageLookupByLibrary.simpleMessage("Following"),
     "hashtag": MessageLookupByLibrary.simpleMessage("#"),
+    "hide": MessageLookupByLibrary.simpleMessage("Masquer"),
     "home": MessageLookupByLibrary.simpleMessage("Accueil"),
     "homeSubtitle": MessageLookupByLibrary.simpleMessage(
       "Parcourez les facultés, calculez votre moyenne, partagez vos idées et notez facilement.",
@@ -136,8 +146,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "humanResourcesManagement": MessageLookupByLibrary.simpleMessage(
       "Gestion des ressources humaines",
     ),
+    "internationalCooperation": MessageLookupByLibrary.simpleMessage(
+      "Coopération internationale",
+    ),
     "internationalEconomics": MessageLookupByLibrary.simpleMessage(
       "Économie internationale",
+    ),
+    "internationalRelations": MessageLookupByLibrary.simpleMessage(
+      "Relations internationales",
     ),
     "law": MessageLookupByLibrary.simpleMessage("Droit"),
     "legalProfessionsLaw": MessageLookupByLibrary.simpleMessage(
@@ -145,8 +161,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "light": MessageLookupByLibrary.simpleMessage("Clair"),
     "lightMode": MessageLookupByLibrary.simpleMessage("Mode clair"),
+    "localAdministration": MessageLookupByLibrary.simpleMessage(
+      "Administration locale",
+    ),
     "login": MessageLookupByLibrary.simpleMessage("Se connecter"),
     "logout": MessageLookupByLibrary.simpleMessage("Se déconnecter"),
+    "major": MessageLookupByLibrary.simpleMessage("Major"),
     "majors": MessageLookupByLibrary.simpleMessage("Spécialités"),
     "managementSciences": MessageLookupByLibrary.simpleMessage(
       "Sciences de gestion",
@@ -165,6 +185,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "monetaryFinancialEconomics": MessageLookupByLibrary.simpleMessage(
       "Économie monétaire et financière",
     ),
+    "mood": MessageLookupByLibrary.simpleMessage("Humeur"),
+    "name": MessageLookupByLibrary.simpleMessage("Nom"),
     "newPost": MessageLookupByLibrary.simpleMessage("Nouvelle publication"),
     "noMajorsYet": MessageLookupByLibrary.simpleMessage(
       "Aucune spécialité enregistrée pour le moment",
@@ -196,10 +218,12 @@ class MessageLookup extends MessageLookupByLibrary {
       "Votre publication a été publiée ✅",
     ),
     "posted": MessageLookupByLibrary.simpleMessage("Publication"),
+    "posts": MessageLookupByLibrary.simpleMessage("Publications"),
     "privacyPolicy": MessageLookupByLibrary.simpleMessage(
       "Politique de confidentialité",
     ),
     "privateLaw": MessageLookupByLibrary.simpleMessage("Droit privé"),
+    "profile": MessageLookupByLibrary.simpleMessage("Profile"),
     "publicLaw": MessageLookupByLibrary.simpleMessage("Droit public"),
     "publish": MessageLookupByLibrary.simpleMessage("Publier"),
     "quickCalc": MessageLookupByLibrary.simpleMessage("Calcul rapide"),
@@ -214,6 +238,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Le lien de réinitialisation a été envoyé",
     ),
     "save": MessageLookupByLibrary.simpleMessage("Enregistrer"),
+    "savePost": MessageLookupByLibrary.simpleMessage(
+      "Enregistrer la publication",
+    ),
     "searchClipboard": MessageLookupByLibrary.simpleMessage(
       "Rechercher dans le presse-papiers…",
     ),
@@ -233,6 +260,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "systemMode": MessageLookupByLibrary.simpleMessage("Mode système"),
     "taxLaw": MessageLookupByLibrary.simpleMessage("Droit fiscal"),
     "title": MessageLookupByLibrary.simpleMessage("Titre"),
+    "university": MessageLookupByLibrary.simpleMessage("University"),
+    "userInfo": MessageLookupByLibrary.simpleMessage("User Information"),
     "viewAll": MessageLookupByLibrary.simpleMessage("Voir tout"),
     "welcomeEmoji": MessageLookupByLibrary.simpleMessage("Bienvenue 👋"),
     "welcomeUniSpace": MessageLookupByLibrary.simpleMessage(

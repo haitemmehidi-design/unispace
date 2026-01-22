@@ -7,7 +7,7 @@
   "writeYourComment": "اكتب تعليقك",
   "publish": "نشر",
   "cancel": "إلغاء",
-  "posted": "منشور",
+  "posted": "نشر",
   "searchClipboard": "ابحث داخل الحافظة",
   "note": "ملاحظة",
   "title": "العنوان",
@@ -47,7 +47,7 @@
   "pinNote": "تثبيت الملاحظة",
   "noPostsYet": "لا توجد منشورات بعد",
   "startDiscussion": "ابدأ النقاش الأول في المجتمع وشارك تجربتك مع زملائك.",
-  "createPost": "منشور",
+  "createPost": "نشر",
 
   "newPost": "منشور جديد",
   "mediaUrl": "رابط صورة/فيديو",
@@ -133,7 +133,31 @@
   "legalProfessionsLaw": "قانون المهن القانونية والقضائية",
   "maritimePortLaw": "القانون البحري والمينائي",
   "energyMiningLaw": "قانون الطاقة والمناجم",
-  "taxLaw": "قانون جبائي"
+  "taxLaw": "قانون جبائي",
+  "internationalRelations": "علاقات دولية",
+  "internationalCooperation": "التعاون الدولي",
+  "localAdministration": "الإدارة المحلية",
+  "contactUs": "تواصل معنا",
+  "report": "إبلاغ",
+  "blockAccount": "حظر الحساب",
+  "followComment": "متابعة التعليق",
+  "copyText": "نسخ النص",
+  "share": "مشاركة",
+  "hide": "إخفاء",
+  "savePost": "حفظ المنشور",
+  "university": "الجامعة",
+  "faculty": "الكلية",
+  "department": "القسم",
+  "major": "التخصص",
+  "mood": "Mood",
+  "name": "الاسم",
+  "posts": "المنشورات",
+  "comments": "التعليقات",
+  "profile": "الملف الشخصي",
+  "following": "يتابع",
+  "userInfo": "معلومات المستخدم"
+
+
 
 
 

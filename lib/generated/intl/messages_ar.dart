@@ -43,6 +43,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "قسم التعليم الأساسي",
     ),
     "basicUnit": MessageLookupByLibrary.simpleMessage("الوحدة الأساسية"),
+    "blockAccount": MessageLookupByLibrary.simpleMessage("حظر الحساب"),
     "businessAdministration": MessageLookupByLibrary.simpleMessage(
       "إدارة أعمال",
     ),
@@ -65,12 +66,14 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "commonCore": MessageLookupByLibrary.simpleMessage("جذع مشترك"),
     "community": MessageLookupByLibrary.simpleMessage("المجتمع"),
+    "contactUs": MessageLookupByLibrary.simpleMessage("تواصل معنا"),
     "content": MessageLookupByLibrary.simpleMessage("المحتوى"),
+    "copyText": MessageLookupByLibrary.simpleMessage("نسخ النص"),
     "corporateFinance": MessageLookupByLibrary.simpleMessage("مالية المؤسسة"),
     "corporateFinancialManagement": MessageLookupByLibrary.simpleMessage(
       "التسيير المالي للمؤسسات",
     ),
-    "createPost": MessageLookupByLibrary.simpleMessage("منشور"),
+    "createPost": MessageLookupByLibrary.simpleMessage("نشر"),
     "createPoste": MessageLookupByLibrary.simpleMessage("أنشئ منشوراً"),
     "credits": MessageLookupByLibrary.simpleMessage("رصيد:"),
     "criminalLaw": MessageLookupByLibrary.simpleMessage(
@@ -78,6 +81,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "dark": MessageLookupByLibrary.simpleMessage("داكن"),
     "darkMode": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
+    "department": MessageLookupByLibrary.simpleMessage("القسم"),
     "economics": MessageLookupByLibrary.simpleMessage("علوم اقتصادية"),
     "economicsDept": MessageLookupByLibrary.simpleMessage("قسم علوم اقتصادية"),
     "editWeights": MessageLookupByLibrary.simpleMessage("تعديل الأوزان"),
@@ -89,6 +93,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "الوحدة الاستكشافية",
     ),
     "faculties": MessageLookupByLibrary.simpleMessage("الكليات"),
+    "faculty": MessageLookupByLibrary.simpleMessage("الكلية"),
     "facultyEconomics": MessageLookupByLibrary.simpleMessage(
       "كلية العلوم الاقتصادية والتجارية وعلوم التسيير",
     ),
@@ -109,7 +114,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "financialManagement": MessageLookupByLibrary.simpleMessage(
       "الإدارة المالية",
     ),
+    "followComment": MessageLookupByLibrary.simpleMessage("متابعة التعليق"),
+    "following": MessageLookupByLibrary.simpleMessage("يتابع"),
     "hashtag": MessageLookupByLibrary.simpleMessage("#"),
+    "hide": MessageLookupByLibrary.simpleMessage("إخفاء"),
     "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
     "homeSubtitle": MessageLookupByLibrary.simpleMessage(
       "تصفح الكليات، احسب معدلك، شارك أفكارك، ودوّن ملاحظاتك بسهولة.",
@@ -121,8 +129,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "humanResourcesManagement": MessageLookupByLibrary.simpleMessage(
       "إدارة موارد بشرية",
     ),
+    "internationalCooperation": MessageLookupByLibrary.simpleMessage(
+      "التعاون الدولي",
+    ),
     "internationalEconomics": MessageLookupByLibrary.simpleMessage(
       "اقتصاد دولي",
+    ),
+    "internationalRelations": MessageLookupByLibrary.simpleMessage(
+      "علاقات دولية",
     ),
     "law": MessageLookupByLibrary.simpleMessage("حقوق"),
     "legalProfessionsLaw": MessageLookupByLibrary.simpleMessage(
@@ -130,8 +144,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "light": MessageLookupByLibrary.simpleMessage("فاتح"),
     "lightMode": MessageLookupByLibrary.simpleMessage("الوضع الفاتح"),
+    "localAdministration": MessageLookupByLibrary.simpleMessage(
+      "الإدارة المحلية",
+    ),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "logout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
+    "major": MessageLookupByLibrary.simpleMessage("التخصص"),
     "majors": MessageLookupByLibrary.simpleMessage("تخصصات"),
     "managementSciences": MessageLookupByLibrary.simpleMessage("علوم التسيير"),
     "managementSciencesDept": MessageLookupByLibrary.simpleMessage(
@@ -148,6 +166,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "monetaryFinancialEconomics": MessageLookupByLibrary.simpleMessage(
       "اقتصاد نقدي ومالي",
     ),
+    "mood": MessageLookupByLibrary.simpleMessage("Mood"),
+    "name": MessageLookupByLibrary.simpleMessage("الاسم"),
     "newPost": MessageLookupByLibrary.simpleMessage("منشور جديد"),
     "noMajorsYet": MessageLookupByLibrary.simpleMessage("لا تخصصات مسجّلة بعد"),
     "noNotesYet": MessageLookupByLibrary.simpleMessage("لا توجد ملاحظات بعد"),
@@ -170,9 +190,11 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "politicalSciences": MessageLookupByLibrary.simpleMessage("علوم سياسية"),
     "post": MessageLookupByLibrary.simpleMessage("تم نشر منشورك ✅"),
-    "posted": MessageLookupByLibrary.simpleMessage("منشور"),
+    "posted": MessageLookupByLibrary.simpleMessage("نشر"),
+    "posts": MessageLookupByLibrary.simpleMessage("المنشورات"),
     "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
     "privateLaw": MessageLookupByLibrary.simpleMessage("قانون خاص"),
+    "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
     "publicLaw": MessageLookupByLibrary.simpleMessage("قانون عام"),
     "publish": MessageLookupByLibrary.simpleMessage("نشر"),
     "quickCalc": MessageLookupByLibrary.simpleMessage("الحساب السريع"),
@@ -187,6 +209,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "تم إرسال رابط إعادة التعيين",
     ),
     "save": MessageLookupByLibrary.simpleMessage("حفظ"),
+    "savePost": MessageLookupByLibrary.simpleMessage("حفظ المنشور"),
     "searchClipboard": MessageLookupByLibrary.simpleMessage(
       "ابحث داخل الحافظة…",
     ),
@@ -202,6 +225,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "systemMode": MessageLookupByLibrary.simpleMessage("حسب النظام"),
     "taxLaw": MessageLookupByLibrary.simpleMessage("قانون جبائي"),
     "title": MessageLookupByLibrary.simpleMessage("العنوان"),
+    "university": MessageLookupByLibrary.simpleMessage("الجامعة"),
+    "userInfo": MessageLookupByLibrary.simpleMessage("معلومات المستخدم"),
     "viewAll": MessageLookupByLibrary.simpleMessage("عرض الكل"),
     "welcomeEmoji": MessageLookupByLibrary.simpleMessage("مرحباً بك 👋"),
     "welcomeUniSpace": MessageLookupByLibrary.simpleMessage(

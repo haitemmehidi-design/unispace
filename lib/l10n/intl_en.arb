@@ -111,7 +111,7 @@
 ,"internationalEconomics": "International Economics"
 ,"noSubjectsThisSemester": "No subjects in this semester."
 ,"credits": "Credits:",
-  "coefficient": "Coefficient:"
+  "coefficient": "Coef:"
 ,"close": "Close"
 ,"studyResults": "Study Results",
   "notesTdTpExam": "Grades (TD/TP/Exam)"
@@ -136,7 +136,32 @@
   "legalProfessionsLaw": "Legal and Judicial Professions Law",
   "maritimePortLaw": "Maritime and Port Law",
   "energyMiningLaw": "Energy and Mining Law",
-  "taxLaw": "Tax Law"
+  "taxLaw": "Tax Law",
+  "internationalRelations": "International Relations",
+  "internationalCooperation": "International Cooperation",
+  "localAdministration": "Local Administration",
+  "contactUs": "Contact Us",
+  "report": "Report",
+  "blockAccount": "Block Account",
+  "followComment": "Follow Comment",
+  "copyText": "Copy Text",
+  "share": "Share",
+  "hide": "Hide",
+  "savePost": "Save Post",
+  "university": "University",
+  "faculty": "Faculty",
+  "department": "Department",
+  "major": "Major",
+  "mood": "Mood",
+  "name": "Name",
+  "posts": "Posts",
+  "comments": "Comments",
+  "profile": "Profile",
+  "following": "Following",
+  "userInfo": "User Information"
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static const _seed = Color(0xFF3557D5);
+  static const _seed = Color(0x30475E);
   static const _secondary = Color(0xFF2F9E44);
   static const _error = Color(0xFFE03131);
 

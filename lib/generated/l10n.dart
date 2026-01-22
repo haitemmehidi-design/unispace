@@ -774,14 +774,9 @@ class S {
     );
   }
 
-  /// `Coefficient:`
+  /// `Coef:`
   String get coefficient {
-    return Intl.message(
-      'Coefficient:',
-      name: 'coefficient',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Coef:', name: 'coefficient', desc: '', args: []);
   }
 
   /// `Close`
@@ -962,6 +957,131 @@ class S {
   /// `Tax Law`
   String get taxLaw {
     return Intl.message('Tax Law', name: 'taxLaw', desc: '', args: []);
+  }
+
+  /// `International Relations`
+  String get internationalRelations {
+    return Intl.message(
+      'International Relations',
+      name: 'internationalRelations',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `International Cooperation`
+  String get internationalCooperation {
+    return Intl.message(
+      'International Cooperation',
+      name: 'internationalCooperation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Local Administration`
+  String get localAdministration {
+    return Intl.message(
+      'Local Administration',
+      name: 'localAdministration',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contact Us`
+  String get contactUs {
+    return Intl.message('Contact Us', name: 'contactUs', desc: '', args: []);
+  }
+
+  /// `Block Account`
+  String get blockAccount {
+    return Intl.message(
+      'Block Account',
+      name: 'blockAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Follow Comment`
+  String get followComment {
+    return Intl.message(
+      'Follow Comment',
+      name: 'followComment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Copy Text`
+  String get copyText {
+    return Intl.message('Copy Text', name: 'copyText', desc: '', args: []);
+  }
+
+  /// `Hide`
+  String get hide {
+    return Intl.message('Hide', name: 'hide', desc: '', args: []);
+  }
+
+  /// `Save Post`
+  String get savePost {
+    return Intl.message('Save Post', name: 'savePost', desc: '', args: []);
+  }
+
+  /// `University`
+  String get university {
+    return Intl.message('University', name: 'university', desc: '', args: []);
+  }
+
+  /// `Faculty`
+  String get faculty {
+    return Intl.message('Faculty', name: 'faculty', desc: '', args: []);
+  }
+
+  /// `Department`
+  String get department {
+    return Intl.message('Department', name: 'department', desc: '', args: []);
+  }
+
+  /// `Major`
+  String get major {
+    return Intl.message('Major', name: 'major', desc: '', args: []);
+  }
+
+  /// `Mood`
+  String get mood {
+    return Intl.message('Mood', name: 'mood', desc: '', args: []);
+  }
+
+  /// `Name`
+  String get name {
+    return Intl.message('Name', name: 'name', desc: '', args: []);
+  }
+
+  /// `Posts`
+  String get posts {
+    return Intl.message('Posts', name: 'posts', desc: '', args: []);
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message('Profile', name: 'profile', desc: '', args: []);
+  }
+
+  /// `Following`
+  String get following {
+    return Intl.message('Following', name: 'following', desc: '', args: []);
+  }
+
+  /// `User Information`
+  String get userInfo {
+    return Intl.message(
+      'User Information',
+      name: 'userInfo',
+      desc: '',
+      args: [],
+    );
   }
 }
 
