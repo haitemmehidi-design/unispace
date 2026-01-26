@@ -157,7 +157,11 @@
   "comments": "Commentaires",
   "profile": "Profile",
   "following": "Following",
-  "userInfo": "User Information"
+  "userInfo": "User Information",
+  "facultyArtsLanguages": "Faculté des lettres et des langues étrangères",
+  "deptArabicLangLit": "Département de langue et littérature arabes",
+  "deptFrenchLangLit": "Département de langue et littérature françaises",
+  "deptEnglishLangLit": "Département de langue et littérature anglaises"
 
 
 

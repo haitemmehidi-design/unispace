@@ -83,6 +83,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "dark": MessageLookupByLibrary.simpleMessage("Dark"),
         "darkMode": MessageLookupByLibrary.simpleMessage("Dark Mode"),
         "department": MessageLookupByLibrary.simpleMessage("Department"),
+        "deptArabicLangLit": MessageLookupByLibrary.simpleMessage(
+            "Department of Arabic Language and Literature"),
+        "deptEnglishLangLit": MessageLookupByLibrary.simpleMessage(
+            "Department of English Language and Literature"),
+        "deptFrenchLangLit": MessageLookupByLibrary.simpleMessage(
+            "Department of French Language and Literature"),
         "economics": MessageLookupByLibrary.simpleMessage("Economics"),
         "economicsDept":
             MessageLookupByLibrary.simpleMessage("Department of Economics"),
@@ -94,6 +100,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Exploratory Unit"),
         "faculties": MessageLookupByLibrary.simpleMessage("Faculties"),
         "faculty": MessageLookupByLibrary.simpleMessage("Faculty"),
+        "facultyArtsLanguages": MessageLookupByLibrary.simpleMessage(
+            "Faculty of Arts and Foreign Languages"),
         "facultyEconomics": MessageLookupByLibrary.simpleMessage(
             "Faculty of Economics, Commerce, and Management Sciences"),
         "facultyLawPolitical": MessageLookupByLibrary.simpleMessage(

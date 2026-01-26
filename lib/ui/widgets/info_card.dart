@@ -6,6 +6,7 @@ class InfoCard extends StatelessWidget {
     required this.title,
     this.subtitle,
     this.leadingIcon,
+    this.iconColor,
     this.leading,
     this.onTap,
     this.backgroundColor,
@@ -14,6 +15,7 @@ class InfoCard extends StatelessWidget {
   final String title;
   final String? subtitle;
   final IconData? leadingIcon;
+  final Color? iconColor;
   final Widget? leading;
   final VoidCallback? onTap;
   final Color? backgroundColor;
@@ -23,7 +25,8 @@ class InfoCard extends StatelessWidget {
     final theme = Theme.of(context);
     final icon = leading ??
         (leadingIcon != null
-            ? Icon(leadingIcon, size: 32, color: theme.colorScheme.primary)
+            ? Icon(leadingIcon, size: 32,
+            color: Colors.white)
             : null);
 
     return Material(

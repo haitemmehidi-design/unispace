@@ -1449,6 +1449,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Faculty of Arts and Foreign Languages`
+  String get facultyArtsLanguages {
+    return Intl.message(
+      'Faculty of Arts and Foreign Languages',
+      name: 'facultyArtsLanguages',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Department of Arabic Language and Literature`
+  String get deptArabicLangLit {
+    return Intl.message(
+      'Department of Arabic Language and Literature',
+      name: 'deptArabicLangLit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Department of French Language and Literature`
+  String get deptFrenchLangLit {
+    return Intl.message(
+      'Department of French Language and Literature',
+      name: 'deptFrenchLangLit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Department of English Language and Literature`
+  String get deptEnglishLangLit {
+    return Intl.message(
+      'Department of English Language and Literature',
+      name: 'deptEnglishLangLit',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

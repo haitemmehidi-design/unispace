@@ -9405,12 +9405,12 @@ List<ProgramFaculty> getDemoFaculties(BuildContext context) {
     ]),
 
 
-    ProgramFaculty(name: 'كلية الادب واللغات الاجنبية', majors: [
+    ProgramFaculty(name: S.of(context).facultyArtsLanguages, majors: [
       // ===========================
       // قسم اللغة والادب العربي
       // ===========================
       ProgramMajor(
-        name: 'قسم اللغة والادب العربي',
+        name: S.of(context).deptArabicLangLit,
         tracks: [
           ProgramTrack(
             name: 'Licence 1',
@@ -9639,7 +9639,7 @@ List<ProgramFaculty> getDemoFaculties(BuildContext context) {
       //  قسم الادب الفرنسي
       // ============================================
       ProgramMajor(
-        name:'قسم اللغو والادب الفرنسي',
+        name:S.of(context).deptFrenchLangLit,
         tracks: [
           // ============================================
           // السنة 1
@@ -10085,7 +10085,7 @@ List<ProgramFaculty> getDemoFaculties(BuildContext context) {
           // //========================================================
           // //===============السنة الثالثة ===============
           ProgramTrack(
-            name: 'Licence 1',
+            name: 'Licence 3',
             level: '',
             semesters: [
               ProgramSemester(label: 'S1',
@@ -10309,7 +10309,7 @@ List<ProgramFaculty> getDemoFaculties(BuildContext context) {
       //  قسم الادب الانجليزي
       // ============================================
       ProgramMajor(
-        name: 'قسم اللغة والادب الانجليزي',
+        name: S.of(context).deptEnglishLangLit,
         tracks: [
 // ============================================
           // السنة 1
@@ -10755,7 +10755,7 @@ List<ProgramFaculty> getDemoFaculties(BuildContext context) {
           // //========================================================
           // //===============السنة الثالثة ===============
           ProgramTrack(
-            name: 'Licence 1',
+            name: 'Licence 3',
             level: '',
             semesters: [
               ProgramSemester(label: 'S1',

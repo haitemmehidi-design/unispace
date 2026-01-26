@@ -81,6 +81,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "dark": MessageLookupByLibrary.simpleMessage("داكن"),
         "darkMode": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
         "department": MessageLookupByLibrary.simpleMessage("القسم"),
+        "deptArabicLangLit":
+            MessageLookupByLibrary.simpleMessage("قسم اللغة والأدب العربي"),
+        "deptEnglishLangLit":
+            MessageLookupByLibrary.simpleMessage("قسم اللغة والأدب الإنجليزي"),
+        "deptFrenchLangLit":
+            MessageLookupByLibrary.simpleMessage("قسم اللغة والأدب الفرنسي"),
         "economics": MessageLookupByLibrary.simpleMessage("علوم اقتصادية"),
         "economicsDept":
             MessageLookupByLibrary.simpleMessage("قسم علوم اقتصادية"),
@@ -92,6 +98,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("الوحدة الاستكشافية"),
         "faculties": MessageLookupByLibrary.simpleMessage("الكليات"),
         "faculty": MessageLookupByLibrary.simpleMessage("الكلية"),
+        "facultyArtsLanguages": MessageLookupByLibrary.simpleMessage(
+            "كلية الآداب واللغات الأجنبية"),
         "facultyEconomics": MessageLookupByLibrary.simpleMessage(
             "كلية العلوم الاقتصادية والتجارية وعلوم التسيير"),
         "facultyLawPolitical": MessageLookupByLibrary.simpleMessage(

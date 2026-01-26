@@ -155,7 +155,11 @@
   "comments": "التعليقات",
   "profile": "الملف الشخصي",
   "following": "يتابع",
-  "userInfo": "معلومات المستخدم"
+  "userInfo": "معلومات المستخدم",
+  "facultyArtsLanguages": "كلية الآداب واللغات الأجنبية",
+  "deptArabicLangLit": "قسم اللغة والأدب العربي",
+  "deptFrenchLangLit": "قسم اللغة والأدب الفرنسي",
+  "deptEnglishLangLit": "قسم اللغة والأدب الإنجليزي"
 
 
 

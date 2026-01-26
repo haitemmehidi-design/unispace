@@ -1038,7 +1038,7 @@ class HomeLandingScreen extends StatelessWidget {
                       backgroundColor: Theme.of(context)
                           .colorScheme
                           .onPrimaryFixedVariant
-                          .withOpacity(0.4),
+                          .withOpacity(0.8),
                       leadingIcon: Icons.school_outlined,
                       title: S.of(context).welcomeEmoji,
                       subtitle: S.of(context).homeSubtitle,
@@ -1048,19 +1048,20 @@ class HomeLandingScreen extends StatelessWidget {
               ),
             ),
             SliverPadding(
-              padding: const EdgeInsets.fromLTRB(1, 12, 1, 10),
+              padding: const EdgeInsets.fromLTRB(1, 12, 1, 1),
               sliver: SliverToBoxAdapter(
                 child: Container(
+
                   height: 50,
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.surface,
+                    color: Colors.transparent,
                     borderRadius: BorderRadius.circular(12),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.1),
-                        blurRadius: 6,
-                        offset: const Offset(0, 2),
+                        color: Theme.of(context).colorScheme.onSurface.withOpacity(0.2),
+                        blurRadius: 20,
+                        offset: const Offset(4, 8),
                       ),
                     ],
                   ),
@@ -1706,6 +1707,23 @@ class _CommunityScreenState extends State<CommunityScreen> {
       imagePaths: [
         'assets/images/5917864502214986758.jpg',
         'assets/images/5917864502214986759.jpg',
+      ],
+      createdAt: DateTime.now().subtract(const Duration(hours: 5)),
+      votes: 0,
+      tags: const [
+        'directions',
+        'app',
+      ],
+    ),
+    _Post(
+      author: 'CREATOR',
+      title: 'Directions to use',
+      body:
+      'في حالة تسائلكم عن مكان تواجد نسب المواد فيمكنكم الاطلاع عليها من خلال تطبيق بروغرس كما هو موضح في الصور\n'
+          'ففي حالة عدم وجود معلومات تخصصكم داخل التطبيق يمكنكم حساب المعدل من خلال خاصية الحساب السريع في القائمة او ارسال المعلومات الينا مباشرة ',
+      imagePaths: [
+        'assets/images/progress2.jpeg',
+        'assets/images/progress.jpeg',
       ],
       createdAt: DateTime.now().subtract(const Duration(hours: 5)),
       votes: 0,
@@ -2811,7 +2829,7 @@ class _PostCardState extends State<_PostCard> {
                                   color: Theme.of(context)
                                       .colorScheme
                                       .onSurface
-                                      .withOpacity(0.15),
+                                      .withOpacity(0.09),
                                   offset: const Offset(0, 40),
                                   blurRadius: 20,
                                   spreadRadius: 3,
@@ -2937,7 +2955,7 @@ class _PostCardState extends State<_PostCard> {
                                   color: Theme.of(context)
                                       .colorScheme
                                       .onSurface
-                                      .withOpacity(0.15),
+                                      .withOpacity(0.09),
                                   offset: const Offset(0, 40),
                                   blurRadius: 20,
                                   spreadRadius: 3,
@@ -2993,10 +3011,7 @@ class _PostCardState extends State<_PostCard> {
                                       borderRadius: BorderRadius.circular(16),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Theme.of(context)
-                                              .colorScheme
-                                              .onSurface
-                                              .withOpacity(0.2),
+                                          color: Theme.of(context).colorScheme.onSurface.withOpacity(0.2),
                                           offset: const Offset(0, 10),
                                           blurRadius: 20,
                                           spreadRadius: 1,
@@ -3029,10 +3044,8 @@ class _PostCardState extends State<_PostCard> {
                             border: Border.all(color: Colors.grey, width: 1),
                             boxShadow: [
                               BoxShadow(
-                                color: Theme.of(context)
-                                    .colorScheme
-                                    .onSurface
-                                    .withOpacity(0.15),
+                                color: Theme.of(context).colorScheme.onSurface.
+                                withOpacity(0.09),
                                 offset: const Offset(0, 40),
                                 blurRadius: 20,
                                 spreadRadius: 3,
@@ -8788,7 +8801,7 @@ class FacultyMajorsScreen extends StatelessWidget {
     return AppScaffold(
       appBar:
           AppBar(automaticallyImplyLeading: true, title: Text(faculty.name)),
-      endDrawer: const AppEndDrawer(),
+      //endDrawer: const AppEndDrawer(),
       padding: EdgeInsets.zero,
       body: ListView.separated(
         itemCount: faculty.majors.length,
@@ -8842,7 +8855,7 @@ class MajorTracksScreen extends StatelessWidget {
           title: Text(
             major.name,
           )),
-      endDrawer: const AppEndDrawer(),
+     // endDrawer: const AppEndDrawer(),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
@@ -9665,8 +9678,8 @@ class _NoteCardState extends State<NoteCard> {
           color: moy == 0
               ? Theme.of(context).colorScheme.onSurface
               : moy < 10
-              ? Colors.red
-              : Colors.green,
+              ? Colors.red.withOpacity(0.7)
+              : Colors.green.withOpacity(0.7),
         ),
 
       ),
@@ -9807,8 +9820,8 @@ class _NoteCardState extends State<NoteCard> {
             color: moy == 0
                 ? Theme.of(context).colorScheme.onSurface
                 : moy < 10
-                ? Colors.red
-                : Colors.green,),
+                ? Colors.red.withOpacity(0.7)
+                : Colors.green.withOpacity(0.7),),
 
           Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
