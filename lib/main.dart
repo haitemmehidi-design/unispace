@@ -46,6 +46,7 @@ import './moduls.dart';
 import 'module/moduls.dart';
 import 'package:google_fonts/google_fonts.dart';
 //import 'package: UniSpace/generated/l10n.dart';
+//import 'core/local/grades_local_store.dart';
 import 'package:translator/translator.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:image_picker/image_picker.dart';
@@ -793,7 +794,7 @@ class _HomeShellState extends State<HomeShell> with TickerProviderStateMixin {
           // المجتمع بأسلوب Reddit
           CommunityScreen(),
           // الملاحظات الاحترافية
-          NotesScreen(),
+          //NotesScreen(),
         ],
       ),
       bottomNavigationBar: _BottomBar(
@@ -1422,12 +1423,12 @@ class _NotesScreenState extends State<NotesScreen> {
           //mainAxisSize: MainAxisSize.min,
           children: [
             Row(textDirection: TextDirection.ltr, children: [
-              IconButton(
-                icon: const Icon(Icons.menu),
-                onPressed: () {
-                  Scaffold.of(context).openEndDrawer(); // لأنك تستخدم endDrawer
-                },
-              ),
+              // IconButton(
+              //   icon: const Icon(Icons.menu),
+              //   onPressed: () {
+              //     Scaffold.of(context).openEndDrawer(); // لأنك تستخدم endDrawer
+              //   },
+              // ),
               Text(
                 'NotePade',
                 style: GoogleFonts.pacifico(
@@ -1756,7 +1757,8 @@ class _CommunityScreenState extends State<CommunityScreen> {
             const Spacer(),
             IconButton(
               icon: const Icon(Icons.add_circle_outline),
-              onPressed: _newPost,
+              onPressed:null,
+              //_newPost,
             ),
             IconButton(
                 icon: const Icon(Icons.search),
@@ -1765,14 +1767,15 @@ class _CommunityScreenState extends State<CommunityScreen> {
                 }),
             IconButton(
               icon: const Icon(Icons.account_circle),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (_) => const ProfileScreen(),
-                  ),
-                );
-              },
+              onPressed:null,
+              //     () {
+              //   Navigator.push(
+              //     context,
+              //     MaterialPageRoute(
+              //       builder: (_) => const ProfileScreen(),
+              //     ),
+              //   );
+              // },
             ),
           ],
         ),
@@ -2580,192 +2583,192 @@ class _PostCardState extends State<_PostCard> {
                       const Spacer(),
                       GestureDetector(
                         onTap: () {
-                          showModalBottomSheet(
-                            context: context,
-                            isScrollControlled: true,
-                            backgroundColor: Colors.transparent,
-                            builder: (context) {
-                              return DraggableScrollableSheet(
-                                initialChildSize: 0.5,
-                                minChildSize: 0.5,
-                                maxChildSize: 0.85,
-                                builder: (context, scrollController) {
-                                  return Container(
-                                    decoration: BoxDecoration(
-                                      color:
-                                          Theme.of(context).colorScheme.surface,
-                                      borderRadius: const BorderRadius.vertical(
-                                          top: Radius.circular(16)),
-                                    ),
-                                    child: Column(
-                                      children: [
-                                        Container(
-                                          margin: const EdgeInsets.symmetric(
-                                              vertical: 12),
-                                          width: 40,
-                                          height: 4,
-                                          decoration: BoxDecoration(
-                                            color: Colors.grey,
-                                            borderRadius:
-                                                BorderRadius.circular(10),
-                                          ),
-                                        ),
-                                        SingleChildScrollView(
-                                          scrollDirection: Axis.horizontal,
-                                          child: Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceAround,
-                                            children: [
-                                              const SizedBox(width: 10),
-                                              GestureDetector(
-                                                onTap: () => Share.share(
-                                                    'Check out this post: ${post.title}'),
-                                                child: Image.asset(
-                                                  'assets/icons/repost.png',
-                                                  color: Theme.of(context)
-                                                      .colorScheme
-                                                      .onSurface,
-                                                  width: 50,
-                                                  height: 50,
-                                                ),
-                                              ),
-                                              const SizedBox(width: 10),
-                                              GestureDetector(
-                                                onTap: () => Share.share(
-                                                    'Check out this post: ${post.title}'),
-                                                child: Image.asset(
-                                                  'assets/icons/instagram.png',
-                                                  width: 50,
-                                                  height: 50,
-                                                ),
-                                              ),
-                                              const SizedBox(width: 10),
-                                              GestureDetector(
-                                                onTap: () => Share.share(
-                                                    'Check out this post: ${post.title}'),
-                                                child: Image.asset(
-                                                  'assets/icons/link.png',
-                                                  color: Theme.of(context)
-                                                      .colorScheme
-                                                      .onSurface,
-                                                  width: 50,
-                                                  height: 50,
-                                                ),
-                                              ),
-                                              const SizedBox(width: 10),
-                                              GestureDetector(
-                                                onTap: () => Share.share(
-                                                    'Check out this post: ${post.title}'),
-                                                child: Image.asset(
-                                                  'assets/icons/whatsapp.png',
-                                                  width: 50,
-                                                  height: 50,
-                                                ),
-                                              ),
-                                              const SizedBox(width: 10),
-                                              GestureDetector(
-                                                onTap: () => Share.share(
-                                                    'Check out this post: ${post.title}'),
-                                                child: Image.asset(
-                                                  'assets/icons/Facebook_f_logo_(2019).svg.png',
-                                                  width: 50,
-                                                  height: 50,
-                                                ),
-                                              ),
-                                              const SizedBox(width: 10),
-                                              GestureDetector(
-                                                onTap: () => Share.share(
-                                                    'Check out this post: ${post.title}'),
-                                                child: Image.asset(
-                                                  'assets/icons/messenger.png',
-                                                  width: 50,
-                                                  height: 50,
-                                                ),
-                                              ),
-                                              const SizedBox(width: 10),
-                                              GestureDetector(
-                                                onTap: () => Share.share(
-                                                    'Check out this post: ${post.title}'),
-                                                child: Image.asset(
-                                                  'assets/icons/Logo_of_Twitter.svg.png',
-                                                  width: 50,
-                                                  height: 50,
-                                                ),
-                                              ),
-                                              const SizedBox(width: 10),
-                                              GestureDetector(
-                                                onTap: () => Share.share(
-                                                    'Check out this post: ${post.title}'),
-                                                child: Image.asset(
-                                                  'assets/icons/discord.png',
-                                                  width: 50,
-                                                  height: 50,
-                                                ),
-                                              ),
-                                              const SizedBox(width: 10),
-                                              GestureDetector(
-                                                onTap: () => Share.share(
-                                                    'Check out this post: ${post.title}'),
-                                                child: Image.asset(
-                                                  'assets/icons/email.png',
-                                                  color: Theme.of(context)
-                                                      .colorScheme
-                                                      .onSurface,
-                                                  width: 50,
-                                                  height: 50,
-                                                ),
-                                              ),
-                                              const SizedBox(width: 10),
-                                              GestureDetector(
-                                                onTap: () => Share.share(
-                                                    'Check out this post: ${post.title}'),
-                                                child: Image.asset(
-                                                  'assets/icons/more.png',
-                                                  color: Theme.of(context)
-                                                      .colorScheme
-                                                      .onSurface,
-                                                  width: 50,
-                                                  height: 50,
-                                                ),
-                                              ),
-                                              const SizedBox(width: 10),
-                                            ],
-                                          ),
-                                        ),
-                                        const SizedBox(height: 0),
-                                        Expanded(
-                                          child: ListView(
-                                            controller: scrollController,
-                                            padding: const EdgeInsets.all(12),
-                                            children: [
-                                              const SizedBox(height: 5),
-                                              _bottomSheetItem(context,
-                                                  icon: Icons.bookmark_border,
-                                                  text: S.of(context).savePost),
-                                              _bottomSheetItem(context,
-                                                  icon: Icons
-                                                      .report_gmailerrorred,
-                                                  text: S
-                                                      .of(context)
-                                                      .blockAccount),
-                                              _bottomSheetItem(context,
-                                                  icon: Icons.flag_outlined,
-                                                  text: S.of(context).report),
-                                              _bottomSheetItem(context,
-                                                  icon: Icons
-                                                      .visibility_off_outlined,
-                                                  text: S.of(context).hide),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  );
-                                },
-                              );
-                            },
-                          );
-                        },
+                        //   showModalBottomSheet(
+                        //     context: context,
+                        //     isScrollControlled: true,
+                        //     backgroundColor: Colors.transparent,
+                        //     builder: (context) {
+                        //       return DraggableScrollableSheet(
+                        //         initialChildSize: 0.5,
+                        //         minChildSize: 0.5,
+                        //         maxChildSize: 0.85,
+                        //         builder: (context, scrollController) {
+                        //           return Container(
+                        //             decoration: BoxDecoration(
+                        //               color:
+                        //                   Theme.of(context).colorScheme.surface,
+                        //               borderRadius: const BorderRadius.vertical(
+                        //                   top: Radius.circular(16)),
+                        //             ),
+                        //             child: Column(
+                        //               children: [
+                        //                 Container(
+                        //                   margin: const EdgeInsets.symmetric(
+                        //                       vertical: 12),
+                        //                   width: 40,
+                        //                   height: 4,
+                        //                   decoration: BoxDecoration(
+                        //                     color: Colors.grey,
+                        //                     borderRadius:
+                        //                         BorderRadius.circular(10),
+                        //                   ),
+                        //                 ),
+                        //                 SingleChildScrollView(
+                        //                   scrollDirection: Axis.horizontal,
+                        //                   child: Row(
+                        //                     mainAxisAlignment:
+                        //                         MainAxisAlignment.spaceAround,
+                        //                     children: [
+                        //                       const SizedBox(width: 10),
+                        //                       GestureDetector(
+                        //                         onTap: () => Share.share(
+                        //                             'Check out this post: ${post.title}'),
+                        //                         child: Image.asset(
+                        //                           'assets/icons/repost.png',
+                        //                           color: Theme.of(context)
+                        //                               .colorScheme
+                        //                               .onSurface,
+                        //                           width: 50,
+                        //                           height: 50,
+                        //                         ),
+                        //                       ),
+                        //                       const SizedBox(width: 10),
+                        //                       GestureDetector(
+                        //                         onTap: () => Share.share(
+                        //                             'Check out this post: ${post.title}'),
+                        //                         child: Image.asset(
+                        //                           'assets/icons/instagram.png',
+                        //                           width: 50,
+                        //                           height: 50,
+                        //                         ),
+                        //                       ),
+                        //                       const SizedBox(width: 10),
+                        //                       GestureDetector(
+                        //                         onTap: () => Share.share(
+                        //                             'Check out this post: ${post.title}'),
+                        //                         child: Image.asset(
+                        //                           'assets/icons/link.png',
+                        //                           color: Theme.of(context)
+                        //                               .colorScheme
+                        //                               .onSurface,
+                        //                           width: 50,
+                        //                           height: 50,
+                        //                         ),
+                        //                       ),
+                        //                       const SizedBox(width: 10),
+                        //                       GestureDetector(
+                        //                         onTap: () => Share.share(
+                        //                             'Check out this post: ${post.title}'),
+                        //                         child: Image.asset(
+                        //                           'assets/icons/whatsapp.png',
+                        //                           width: 50,
+                        //                           height: 50,
+                        //                         ),
+                        //                       ),
+                        //                       const SizedBox(width: 10),
+                        //                       GestureDetector(
+                        //                         onTap: () => Share.share(
+                        //                             'Check out this post: ${post.title}'),
+                        //                         child: Image.asset(
+                        //                           'assets/icons/Facebook_f_logo_(2019).svg.png',
+                        //                           width: 50,
+                        //                           height: 50,
+                        //                         ),
+                        //                       ),
+                        //                       const SizedBox(width: 10),
+                        //                       GestureDetector(
+                        //                         onTap: () => Share.share(
+                        //                             'Check out this post: ${post.title}'),
+                        //                         child: Image.asset(
+                        //                           'assets/icons/messenger.png',
+                        //                           width: 50,
+                        //                           height: 50,
+                        //                         ),
+                        //                       ),
+                        //                       const SizedBox(width: 10),
+                        //                       GestureDetector(
+                        //                         onTap: () => Share.share(
+                        //                             'Check out this post: ${post.title}'),
+                        //                         child: Image.asset(
+                        //                           'assets/icons/Logo_of_Twitter.svg.png',
+                        //                           width: 50,
+                        //                           height: 50,
+                        //                         ),
+                        //                       ),
+                        //                       const SizedBox(width: 10),
+                        //                       GestureDetector(
+                        //                         onTap: () => Share.share(
+                        //                             'Check out this post: ${post.title}'),
+                        //                         child: Image.asset(
+                        //                           'assets/icons/discord.png',
+                        //                           width: 50,
+                        //                           height: 50,
+                        //                         ),
+                        //                       ),
+                        //                       const SizedBox(width: 10),
+                        //                       GestureDetector(
+                        //                         onTap: () => Share.share(
+                        //                             'Check out this post: ${post.title}'),
+                        //                         child: Image.asset(
+                        //                           'assets/icons/email.png',
+                        //                           color: Theme.of(context)
+                        //                               .colorScheme
+                        //                               .onSurface,
+                        //                           width: 50,
+                        //                           height: 50,
+                        //                         ),
+                        //                       ),
+                        //                       const SizedBox(width: 10),
+                        //                       GestureDetector(
+                        //                         onTap: () => Share.share(
+                        //                             'Check out this post: ${post.title}'),
+                        //                         child: Image.asset(
+                        //                           'assets/icons/more.png',
+                        //                           color: Theme.of(context)
+                        //                               .colorScheme
+                        //                               .onSurface,
+                        //                           width: 50,
+                        //                           height: 50,
+                        //                         ),
+                        //                       ),
+                        //                       const SizedBox(width: 10),
+                        //                     ],
+                        //                   ),
+                        //                 ),
+                        //                 const SizedBox(height: 0),
+                        //                 Expanded(
+                        //                   child: ListView(
+                        //                     controller: scrollController,
+                        //                     padding: const EdgeInsets.all(12),
+                        //                     children: [
+                        //                       const SizedBox(height: 5),
+                        //                       _bottomSheetItem(context,
+                        //                           icon: Icons.bookmark_border,
+                        //                           text: S.of(context).savePost),
+                        //                       _bottomSheetItem(context,
+                        //                           icon: Icons
+                        //                               .report_gmailerrorred,
+                        //                           text: S
+                        //                               .of(context)
+                        //                               .blockAccount),
+                        //                       _bottomSheetItem(context,
+                        //                           icon: Icons.flag_outlined,
+                        //                           text: S.of(context).report),
+                        //                       _bottomSheetItem(context,
+                        //                           icon: Icons
+                        //                               .visibility_off_outlined,
+                        //                           text: S.of(context).hide),
+                        //                     ],
+                        //                   ),
+                        //                 ),
+                        //               ],
+                        //             ),
+                        //           );
+                        //         },
+                        //       );
+                        //     },
+                        //   );
+                         },
                         child: const Icon(Icons.more_vert),
                       ),
                     ],
@@ -8963,6 +8966,7 @@ class _StudiesTableScreenState extends State<StudiesTableScreen>
   late final TabController _tabController;
   late SemesterModel _semester1;
   late SemesterModel _semester2;
+  final GradesLocalStore _gradesStore = GradesLocalStore();
 
   int currentIndex = 0; // ← هذا يمثل index الحالي
 
@@ -8971,19 +8975,25 @@ class _StudiesTableScreenState extends State<StudiesTableScreen>
     super.initState();
     _tabController = TabController(length: 2, vsync: this);
     _initSemesters();
+    Future.microtask(() async {
+      await loadSemesterNotes();
+    });
 
     // الاستماع لتغييرات الـ index عند التمرير أو الضغط على الـ Tab
     _tabController.addListener(() {
-      if (_tabController.indexIsChanging)
-        return; // تجاهل أثناء التغيير عن طريق الضغط
+      if (_tabController.indexIsChanging) return; // تجاهل أثناء التغيير عن طريق الضغط
       setState(() {
         currentIndex = _tabController.index;
       });
       Future.microtask(() async {
-        await loadSemesterNotes();
-      });
+        await loadSemesterNotes();});
     });
+
+
+
+
   }
+
 
   void _initSemesters() {
     _semester1 = SemesterModel.fromSpec(
@@ -8995,59 +9005,67 @@ class _StudiesTableScreenState extends State<StudiesTableScreen>
       onChanged: () => setState(() {}),
     );
   }
-
-  /// ==================== حفظ بيانات الفصل الحالي باستخدام Hive ====================
+  /// ==================== حفظ بيانات الفصل الحالي باستخدام SharedPreferences ====================
   Future<void> saveCurrentSemesterNotes() async {
+    FocusScope.of(context).unfocus(); // ← يفرض إنهاء تحرير أي TextField
+
     final currentSemester = currentIndex == 0 ? _semester1 : _semester2;
+    final semesterKey = currentSemester.name;
+    for (final module in currentSemester.modules) {
+      final hasValues =
+          module.td != null || module.tp != null || module.exam != null;
+      final moy = hasValues ? module.moy : null;
+      await _gradesStore.saveGrade(
+        semesterKey,
+        module.title,
+        module.td,
+        module.exam,
+        module.tp,
+        moy,
+        module.coef,
+        module.credits,
+        module.wTD,
+        module.wEX,
+        module.wTP,
+      );
 
-    final box =
-        await Hive.openBox<ModuleModel>('semester_${currentIndex}_notes');
-
-    await box.clear(); // حذف البيانات القديمة
-    await box.addAll(currentSemester.modules);
+    }
 
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text("Semester notes saved ✅")),
     );
   }
 
-  /// ==================== تحميل بيانات الفصل الحالي من Hive ====================
+  /// ==================== تحميل بيانات الفصل الحالي من SharedPreferences ====================
   Future<void> loadSemesterNotes() async {
-    final boxName = 'semester_${currentIndex}_notes';
-    final box = await Hive.openBox<ModuleModel>(boxName);
-
     final currentSemester = currentIndex == 0 ? _semester1 : _semester2;
+    final semesterKey = currentSemester.name;
 
-    // إذا لم تكن هناك بيانات محفوظة، لا نفعل شيئًا
-    if (box.isEmpty) return;
-
-    // نتأكد من أن عدد العناصر متطابق
-    if (box.length != currentSemester.modules.length) {
-      // اختياري: يمكنك مسح الـ box إذا كان غير متوافق
-      // await box.clear();
-      return;
-    }
-
-    // نُحمّل القيم المحفوظة **فوق** النموذج الحالي (بدون إنشاء جديد)
-    for (int i = 0; i < currentSemester.modules.length; i++) {
-      final stored = box.getAt(i);
-      if (stored != null) {
-        final module = currentSemester.modules[i];
-        // نُحمّل القيم القابلة للتغيير فقط
-        module.td = stored.td;
-        module.tp = stored.tp;
-        module.exam = stored.exam;
-        module.coef = stored.coef;
-
-        // يمكنك أيضًا تحميل coef و credits إذا كانت قابلة للتغيير
-        // module.coef = stored.coef;
-        module.credits = stored.credits;
+    var updated = false;
+    for (final module in currentSemester.modules) {
+      final stored = await _gradesStore.loadGrade(semesterKey, module.title);
+      if (stored == null) {
+        continue;
       }
+      module.td = stored['td'];
+      module.tp = stored['tp'];
+      module.exam = stored['exam'];
+
+      module.coef = stored['coef'] ?? module.coef;
+      module.credits = stored['cred'] ?? module.credits;
+      module.wTD = stored['wTD'] ?? module.wTD;
+      module.wEX = stored['wEX'] ?? module.wEX;
+      module.wTP = stored['wTP'] ?? module.wTP;
+
+      updated = true;
     }
 
-    // نُجبر التحديث
-    if (mounted) setState(() {});
+    if (mounted && updated) setState(() {});
   }
+
+
+
+
 
   @override
   void didUpdateWidget(covariant StudiesTableScreen oldWidget) {
@@ -9063,7 +9081,6 @@ class _StudiesTableScreenState extends State<StudiesTableScreen>
     _tabController.dispose();
     super.dispose();
   }
-
   Widget _buildSemesterTabContent(SemesterModel semester) {
     return Builder(
       builder: (context) {
@@ -9109,52 +9126,9 @@ class _StudiesTableScreenState extends State<StudiesTableScreen>
     );
   }
 
-  // Widget _buildSemesterTabContent(SemesterModel semester) {
-  //   return Builder(
-  //     builder: (context) {
-  //       final bottomInset = MediaQuery.of(context).viewInsets.bottom;
-  //       const summaryPadding = 220.0;
-  //       return AnimatedSwitcher(
-  //         duration: const Duration(milliseconds: 250),
-  //         child: SingleChildScrollView(
-  //           key: ValueKey('${semester.name}_${semester.modules.length}'),
-  //           padding: EdgeInsets.fromLTRB(0, 8, 0, summaryPadding + bottomInset),
-  //           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-  //           child: buildSemesterTable(context, semester),
-  //         ),
-  //       );
-  //
-  //     },
-  //   );
-  // }
 
-  // Widget _buildStickyHeader(BuildContext context) {
-  //   final theme = Theme.of(context);
-  //   final subtle = theme.textTheme.bodySmall?.color?.withOpacity(.7);
-  //   return Material(
-  //     elevation: 2,
-  //     color: theme.colorScheme.surface,
-  //     child: Container(
-  //       width: double.infinity,
-  //       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-  //       child: Column(
-  //         crossAxisAlignment: CrossAxisAlignment.start,
-  //         children: [
-  //           Text(
-  //             widget.programName,
-  //             style:
-  //                 theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
-  //           ),
-  //           // const SizedBox(height: 10),
-  //           // Text(
-  //           //   widget.facultyName,
-  //           //   style: theme.textTheme.bodyMedium?.copyWith(color: subtle),
-  //           // ),
-  //         ],
-  //       ),
-  //     ),
-  //   );
-  // }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -9163,90 +9137,842 @@ class _StudiesTableScreenState extends State<StudiesTableScreen>
     final canPop = Navigator.canPop(context);
 
     return AppScaffold(
-        // appBar: AppBar(
-        //   automaticallyImplyLeading: true,
-        //   title: Text(widget.facultyName),
-        //   leading: _DrawerLeading(showBack: canPop),
-        //   leadingWidth: canPop ? 96 : null,
-        // ),
-        body: NestedScrollView(
-      headerSliverBuilder: (context, innerBoxIsScrolled) => [
-        SliverAppBar(
-            pinned: false,
-            floating: true,
-            snap: true,
-            expandedHeight: 50,
-            actionsIconTheme: IconThemeData(
-                color: Theme.of(context).colorScheme.onSurface, size: 15),
-            flexibleSpace: FlexibleSpaceBar(
-                background: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 0, vertical: 1),
-                    child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          SizedBox(width: 45),
-                          // النص طويل
-                          Expanded(
-                            child: Text(
-                              widget.facultyName + ' :',
-                              style: TextStyle(
-                                  fontSize: 20,
-                                  color:
-                                      Theme.of(context).colorScheme.onSurface),
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                          ),
-                          // زر الحفظ
-                          IconButton(
-                            icon: Icon(Icons.save,
-                                color: Theme.of(context).colorScheme.onSurface),
-                            onPressed: saveCurrentSemesterNotes,
-                            tooltip: "Save current semester",
-                            iconSize: 25,
-                          ),
-                          IconButton(
-                            icon: Icon(Icons.insert_drive_file_rounded,
-                                color: Theme.of(context).colorScheme.onSurface),
-                            iconSize: 25,
-                            tooltip: "Download as PDF",
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (_) => ResultsScreen(
-                                    semester1: _semester1,
-                                    semester2: _semester2,
-                                    programLabel: '${widget.programName}',
-                                  ),
+
+        body:
+        NestedScrollView(
+          headerSliverBuilder: (context, innerBoxIsScrolled) => [
+            SliverAppBar(
+                pinned: false,
+                floating: true,
+                snap: true,
+                expandedHeight: 50,
+                actionsIconTheme: IconThemeData(
+                    color: Theme.of(context).colorScheme.onSurface
+                    ,size: 15
+                ),
+                flexibleSpace:
+                FlexibleSpaceBar(
+                    background: Padding(
+                        padding:  EdgeInsets.symmetric(horizontal: 0, vertical: 1),
+                        child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              SizedBox(width: 45),
+                              // النص طويل
+                              Expanded(
+                                child: Text(
+                                  widget.facultyName+' :',
+                                  style: TextStyle(fontSize: 20,
+                                      color: Theme.of(context).colorScheme.onSurface),
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
                                 ),
-                              );
-                            },
-                          )
-                        ])))),
-        SliverPersistentHeader(
-          pinned: true,
-          delegate: TabBarDelegate(
-            TabBar(
-              controller: _tabController,
-              tabs: const [
-                Tab(text: 'S1'),
-                Tab(text: 'S2'),
-              ],
+                              ),
+                              // زر الحفظ
+                              IconButton(
+                                icon: Icon(Icons.save, color: Theme.of(context).colorScheme.onSurface ),
+                                onPressed: saveCurrentSemesterNotes,
+                                tooltip: "Save current semester",
+                                iconSize:  25,
+                              ),
+                              IconButton(
+                                icon:  Icon(Icons.insert_drive_file_rounded,
+                                    color: Theme.of(context).colorScheme.onSurface),
+                                iconSize: 25,
+                                tooltip: "Download as PDF",
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (_) => ResultsScreen(
+                                        semester1: _semester1,
+                                        semester2: _semester2,
+                                        programLabel: '${widget.programName}',
+                                      ),
+                                    ),
+                                  );
+                                },
+                              )
+
+                            ]
+                        )
+                    )
+                )
             ),
+            SliverPersistentHeader(
+              pinned: true,
+              delegate: TabBarDelegate(
+                TabBar(
+                  controller: _tabController,
+                  tabs: const [
+                    Tab(text: 'S1'),
+                    Tab(text: 'S2'),
+                  ],
+                ),
+              ),
+            ),
+          ],
+          body: TabBarView(
+            controller: _tabController,
+            children: [
+              _KeepAlive(child: _buildSemesterTabContent(sem1)),
+              _KeepAlive(child: _buildSemesterTabContent(sem2)),
+            ],
           ),
-        ),
-      ],
-      body: TabBarView(
-        controller: _tabController,
-        children: [
-          _KeepAlive(child: _buildSemesterTabContent(sem1)),
-          _KeepAlive(child: _buildSemesterTabContent(sem2)),
-        ],
-      ),
-    ));
+        )
+    );
   }
 }
+
+class GradesLocalStore {
+  static const String _storageKey = 'unispace_grades_v1';
+
+  String _entryKey(String semester, String moduleId) {
+    return '$semester|$moduleId';
+  }
+
+  Future<Map<String, dynamic>> _loadAll() async {
+    final prefs = await SharedPreferences.getInstance();
+    final raw = prefs.getString(_storageKey);
+    if (raw == null || raw.isEmpty) {
+      return <String, dynamic>{};
+    }
+    final decoded = jsonDecode(raw);
+    if (decoded is Map<String, dynamic>) {
+      return decoded;
+    }
+    return <String, dynamic>{};
+  }
+
+  Future<void> _saveAll(Map<String, dynamic> data) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_storageKey, jsonEncode(data));
+  }
+
+  Future<Map<String, double?>?> loadGrade(
+      String semester,
+      String moduleId,
+      ) async {
+    final all = await _loadAll();
+    final entry = all[_entryKey(semester, moduleId)];
+    if (entry is! Map) {
+      return null;
+    }
+    double? toDouble(dynamic value) {
+      if (value == null) return null;
+      if (value is num) return value.toDouble();
+      return double.tryParse(value.toString());
+    }
+
+    return {
+      'td': toDouble(entry['td']),
+      'exam': toDouble(entry['exam']),
+      'tp': toDouble(entry['tp']),
+      'moy': toDouble(entry['moy']),
+      'coef': toDouble(entry['coef']),
+      'cred': toDouble(entry['cred']),
+      'wTD': toDouble(entry['wTD']),
+      'wEX': toDouble(entry['wEX']),
+      'wTP': toDouble(entry['wTP']),
+    };
+
+  }
+
+  Future<void> saveGrade(
+      String semester,
+      String moduleId,
+      double? td,
+      double? exam,
+      double? tp,
+      double? moy,
+      double coef,
+      double cred,
+      double wTD,
+      double wEX,
+      double wTP,
+      ) async {
+    final all = await _loadAll();
+
+    final hasValues =
+        td != null ||
+            exam != null ||
+            tp != null ||
+            moy != null ||
+            coef != 0 ||
+            cred != 0;
+
+    final key = _entryKey(semester, moduleId);
+
+    if (!hasValues) {
+      all.remove(key);
+      await _saveAll(all);
+      return;
+    }
+
+    all[key] = <String, dynamic>{
+      'td': td,
+      'exam': exam,
+      'tp': tp,
+      'moy': moy,
+      'coef': coef,
+      'cred': cred,
+      'wTD': wTD,
+      'wEX': wEX,
+      'wTP': wTP,
+    };
+
+    await _saveAll(all);
+  }
+
+
+  Future<void> clearGrade(String semester, String moduleId) async {
+    final all = await _loadAll();
+    all.remove(_entryKey(semester, moduleId));
+    await _saveAll(all);
+  }
+}
+
+Widget buildSemesterTable(BuildContext context, SemesterModel sem) {
+  return Padding(
+    padding: const EdgeInsets.all(5),
+    child: SingleChildScrollView(
+      child: Column(
+        children: sem.modules.map((module) {
+          return Column(
+            children: [
+              NoteCard(
+                coef: module.coef,
+                cred: module.credits,
+                subject: module.title,
+                wTD: module.wTD,
+                wEX: module.wEX,
+                wTP: module.wTP,
+
+                initialTd: module.td == 0 ? null : module.td,
+                initialTp: module.tp == 0 ? null : module.tp,
+                initialExam: module.exam == 0 ? null : module.exam,
+
+                onChanged: (td, tp, exam, moy, coef, cred, wTD, wEX, wTP) {
+                  module.td = td ?? 0;
+                  module.tp = tp ?? 0;
+                  module.exam = exam ?? 0;
+
+                  module.coef = coef;
+                  module.credits = cred;
+
+                  module.wTD = wTD;
+                  module.wEX = wEX;
+                  module.wTP = wTP;
+
+                  sem.recompute();
+                  (context as Element).markNeedsBuild();
+                },
+
+              ),
+
+              const SizedBox(height: 20),
+            ],
+          );
+        }).toList(),
+      ),
+    ),
+  );
+}
+
+/// بطاقة المادة NoteCard
+class NoteCard extends StatefulWidget {
+  final double coef;
+  final double cred;
+  final String subject;
+  final double wTD;
+  final double wEX;
+  final double wTP;
+  final double? initialTd;
+  final double? initialTp;
+  final double? initialExam;
+  final Function(
+      double? td,
+      double? tp,
+      double? exam,
+      double moy,
+      double coef,
+      double cred,
+      double wTD,
+      double wEX,
+      double wTP
+      ) onChanged;
+
+
+
+
+  const NoteCard({
+    super.key,
+
+    required this.coef,
+    required this.cred,
+    required this.subject,
+    required this.onChanged,
+    required this.wTD,
+    required this.wEX,
+    required this.wTP,
+    this.initialTd,
+    this.initialTp,
+    this.initialExam,
+
+  });
+
+  @override
+  State<NoteCard> createState() => _NoteCardState();
+}
+class NoteResult {
+  final double td;
+  final double tp;
+  final double exam;
+  final double moy;
+  final double coef;
+  final double cred;
+
+  NoteResult(
+      this.td,
+      this.tp,
+      this.exam,
+      this.moy,
+      this.coef,
+      this.cred);
+}
+class _NoteCardState extends State<NoteCard> {
+  double? td;
+  double? tp;
+  double? exam;
+  double moy = 0.0;
+
+  late double coef;
+  late double cred;
+  late double wTD;
+  late double wEX;
+  late double wTP;
+  late TextEditingController _tdController;
+  late TextEditingController _tpController;
+  late TextEditingController _examController;
+  late TextEditingController _coefController;
+  late TextEditingController _credController;
+
+  String? translatedSubject;
+
+  @override
+  void initState() {
+    super.initState();
+    cred = widget.cred; // نهيئه بالقيمة الأصلية
+    coef = widget.coef;
+    wTD = widget.wTD;
+    wEX = widget.wEX;
+    wTP = widget.wTP;
+    td = widget.initialTd;
+    tp = widget.initialTp;
+    exam = widget.initialExam;
+    calculateMoy();
+    _tdController = TextEditingController(text: _formatGrade(td));
+    _tpController = TextEditingController(text: _formatGrade(tp));
+    _examController = TextEditingController(text: _formatGrade(exam));
+    _coefController = TextEditingController(text: coef.toStringAsFixed(0));
+    _credController = TextEditingController(text: cred.toStringAsFixed(0));
+    _loadTranslatedSubject();
+
+  }
+  void _loadTranslatedSubject() async {
+    try {
+      final result = await translateSubject(context, widget.subject);
+      if (mounted) {
+        setState(() {
+          translatedSubject = result;
+        });
+      }
+    } catch (_) {
+      translatedSubject = widget.subject; // fallback عند الخطأ
+    }
+  }
+
+  @override
+  void didUpdateWidget(covariant NoteCard oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.initialTd != td ||
+        widget.initialTp != tp ||
+        widget.initialExam != exam) {
+      setState(() {
+        td = widget.initialTd;
+        tp = widget.initialTp;
+        exam = widget.initialExam;
+        calculateMoy();
+        _tdController.text = _formatGrade(td);
+        _tpController.text = _formatGrade(tp);
+        _examController.text = _formatGrade(exam);
+      });
+    }
+  }
+
+  @override
+  void dispose() {
+    _tdController.dispose();
+    _tpController.dispose();
+    _examController.dispose();
+    super.dispose();
+  }
+
+  String _formatGrade(double? value) {
+    if (value == null || value == 0) return '';
+    return value.toString();
+  }
+
+
+  double? _parseGrade(String value) {
+    final sanitized = value.replaceAll(',', '.').trim();
+    if (sanitized.isEmpty) return null;
+    return double.tryParse(sanitized);
+  }
+  void onTDChanged(String v) {
+    setState(() {
+      td = _parseGrade(v);
+      calculateMoy();
+      notifyParent();
+    });
+  }
+  void notifyParent() {
+    widget.onChanged(td, tp, exam, moy, coef, cred, wTD, wEX, wTP);
+  }
+
+  void onExamChanged(String v) {
+    setState(() {
+      exam = _parseGrade(v);
+      calculateMoy();
+      notifyParent();
+    });
+  }
+  void onTPChanged(String v) {
+    setState(() {
+      tp = _parseGrade(v);
+      calculateMoy();
+      notifyParent();
+    });
+  }
+  void calculateMoy() {
+    if (td == null && tp == null && exam == null) {
+      moy = 0;
+      return;
+    }
+// هنا معادلة حساب المعدل
+    moy = ((td ?? 0) * wTD) + ((exam ?? 0) * wEX) + ((tp ?? 0) * wTP);
+  }
+  void updateCred(double newValue) {
+    setState(() {
+      cred = newValue;
+      notifyParent();
+    });
+  }
+  void updateCoef(double newValue) {
+    setState(() {
+      coef = newValue;
+      notifyParent();
+    });
+  }
+  void _showWeightsDialog() {
+    TextEditingController wTDController = TextEditingController(text: wTD.toString());
+    TextEditingController wEXController = TextEditingController(text: wEX.toString());
+    TextEditingController wTPController = TextEditingController(text: wTP.toString());
+
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text(S.of(context).editWeights),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              FutureBuilder<String>(
+                future: translateSubject(context,widget.subject),
+                builder: (context, snapshot) {
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return Text('...'); // أثناء التحميل
+                  } else if (snapshot.hasError) {
+                    return Text(widget.subject); // fallback عند الخطأ
+                  } else {
+                    return Text(
+                      textAlign: TextAlign.start,
+                      snapshot.data!,
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
+                      style: const TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    );
+                  }
+                },
+              ),
+              const SizedBox(height: 15,),
+              TextField(
+                  controller: wTDController,
+                  keyboardType: TextInputType.number,
+                  decoration: InputDecoration(labelText: "W. TD"),
+                  textAlign: TextAlign.center
+              ),const SizedBox(height: 10,),
+              TextField(
+                controller: wEXController,
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(labelText: "W. EXAM",),
+                textAlign: TextAlign.center,
+              ),const SizedBox(height: 10,),
+              TextField(
+                controller: wTPController,
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(labelText: "W. TP"),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                setState(() {
+                  wTD = double.tryParse(wTDController.text) ?? wTD;
+                  wEX = double.tryParse(wEXController.text) ?? wEX;
+                  wTP = double.tryParse(wTPController.text) ?? wTP;
+                  calculateMoy();
+                  notifyParent();
+                });
+
+                Navigator.pop(context);
+              },
+              child: Text("OK"),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(width: double.infinity,height: 218,
+      padding: const EdgeInsets.all(13),
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.surface,
+        borderRadius: BorderRadius.circular(30),
+        border:  Border.all(
+          width: 3,
+          color: moy == 0
+              ? Theme.of(context).colorScheme.onSurface
+              : moy < 10
+              ? Colors.red
+              : Colors.green,
+        ),
+
+      ),
+      child: Column(
+        children: [
+          //------------------ الصف العلوي --------------------
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              // اسم المادة
+              Expanded(
+                child:
+                Column(
+                  children: [
+
+                    Text(
+                      translatedSubject ?? widget.subject, // يظهر الاسم الثابت أو fallback أثناء التحميل
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
+                      style: const TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+
+                    Container(
+
+                      child:
+                      const SizedBox(width: 10, height: 15,),
+                    ),
+                  ],
+                ),),
+              Row(
+
+                children: [
+                  // Coef
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      const Text("Coef", style: TextStyle(fontSize: 14)),
+                      const SizedBox(height: 2),
+                      Container(
+                        width: 60,
+                        height: 30,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            color: Theme.of(context).colorScheme.surface,
+                            borderRadius: BorderRadius.circular(40),
+                            border: Border.all(
+                              width: 1,
+                              color: Theme.of(context).colorScheme.onSurface,)
+                        ),
+                        child:
+
+                        TextField(
+                          controller: _coefController,
+                          keyboardType: TextInputType.number,
+                          onChanged: (v) {
+                            final newValue = double.tryParse(v);
+                            if (newValue != null) {
+                              setState(() {
+                                coef = newValue;
+                                notifyParent();
+                              });
+                            }
+                          }
+                          ,
+                          style: const TextStyle(fontSize: 15),
+                          textAlign: TextAlign.center,
+                          decoration: const InputDecoration(
+                            contentPadding: EdgeInsets.only(top: 2, bottom: 0, left: 0, right: 0),
+                            border: InputBorder.none, // إزالة الحد الافتراضي إذا تريد
+                          ),
+                        ),
+
+
+
+                      ),
+
+                    ],
+                  ),
+
+                  const SizedBox(width: 5),
+
+                  // Cred
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      const Text("Cred", style: TextStyle(fontSize: 14)),
+                      const SizedBox(height: 2),
+                      Container(
+                          width: 60,
+                          height: 30,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                              color: Theme.of(context).colorScheme.surface,
+                              borderRadius: BorderRadius.circular(40),
+                              border: Border.all(
+                                width: 1,
+                                color: Theme.of(context).colorScheme.onSurface,)
+                          ),
+                          child:
+                          TextField(
+                            controller: _credController,
+                            keyboardType: TextInputType.number,
+                            onChanged: (v) {
+                              final newValue = double.tryParse(v);
+                              if (newValue != null) {
+                                setState(() {
+                                  cred = newValue;
+                                  notifyParent();
+                                });
+                              }
+                            },
+                            style: const TextStyle(fontSize: 15),
+                            textAlign: TextAlign.center,
+                            decoration: const InputDecoration(
+                              contentPadding: EdgeInsets.only(top: 2, bottom: 0, left: 0, right: 0),
+                              border: InputBorder.none, // إزالة الحد الافتراضي إذا تريد
+                            ),
+                          )
+
+
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+
+
+
+
+            ],
+          ),
+
+          const SizedBox(height: 5),
+          Container(height: 2,
+            color: moy == 0
+                ? Theme.of(context).colorScheme.onSurface
+                : moy < 10
+                ? Colors.red
+                : Colors.green,),
+
+          Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  S.of(context).notesTdTpExam,
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+
+                  ),),
+                IconButton(
+                  icon: const Icon(Icons.info_outline, size: 20),
+                  onPressed: () {
+                    _showWeightsDialog();
+                  },
+                ),
+
+              ]),
+
+          const SizedBox(height: 0),
+
+          //------------------ حقول TD + EXAM + MOY --------------------
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+
+              Row(children: [
+
+                // EXAM
+                if (wEX != 0)
+                  Column(
+                    children: [
+                      const Text("EXAM"),
+                      const SizedBox(height: 2),
+                      Container(
+                        width: 70,
+                        height: 40,
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.surface,
+                          borderRadius: BorderRadius.circular(40),
+                        ),
+                        child: TextField(
+                          controller: _examController,
+                          textAlign: TextAlign.center,
+                          maxLength: 5,
+                          keyboardType: TextInputType.number,
+                          onChanged: (v) {
+                            onExamChanged(v);
+                          },
+                          decoration: const InputDecoration(
+                            contentPadding: EdgeInsets.only(top: 50, bottom: 23, left: 0, right: 0),
+                            border: InputBorder.none,
+                            counterText: '',
+
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                const SizedBox(width: 5,),
+
+                // TD
+                if (wTD != 0)
+                  Column(
+                    children: [
+
+                      const Text("TD"),
+                      const SizedBox(height: 2),
+                      Container(
+                        width: 70,
+                        height: 40,
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.surface,
+                          borderRadius: BorderRadius.circular(40),
+
+                        ),
+                        child: TextField(
+                          controller: _tdController,
+                          textAlign: TextAlign.center,
+                          maxLength: 5,
+                          keyboardType: TextInputType.number,
+                          onChanged: (v) {
+                            onTDChanged(v);
+                          },
+
+                          decoration: const InputDecoration(
+                            contentPadding: EdgeInsets.only(top: 50, bottom: 23, left: 0, right: 0),
+                            border: InputBorder.none,
+                            counterText: '',
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                const SizedBox(width: 5,),
+                //TP
+                if (wTP != 0)
+                  Column(
+                    children: [
+
+                      const Text("TP"),
+                      const SizedBox(height: 2),
+                      Container(
+                        width: 70,
+                        height: 40,
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.surface,
+                          borderRadius: BorderRadius.circular(40),
+
+                        ),
+                        child: TextField(
+                          controller: _tpController,
+                          textAlign: TextAlign.center,
+                          maxLength: 5,
+                          keyboardType: TextInputType.number,
+                          onChanged: (v) {
+                            onTPChanged(v);
+                          },
+
+                          decoration: const InputDecoration(
+                            contentPadding: EdgeInsets.only(top: 50, bottom: 23, left: 0, right: 0),
+                            border: InputBorder.none,
+                            counterText: '',
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
+
+              ]),
+              // MOY
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  const Text("Moy:        ",
+                      style: TextStyle(
+                        fontSize: 15,
+
+                      )),
+                  Text(
+                    moy.toStringAsFixed(2),
+                    style:  TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: moy == 0
+                          ? Theme.of(context).colorScheme.onSurface
+                          : moy < 10
+                          ? Colors.red
+                          : Colors.green,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+
+}
+
 
 class TabBarDelegate extends SliverPersistentHeaderDelegate {
   final TabBar _tabBar;
@@ -9274,548 +10000,6 @@ class TabBarDelegate extends SliverPersistentHeaderDelegate {
     return false;
   }
 }
-
-Widget buildSemesterTable(BuildContext context, SemesterModel sem) {
-  return Padding(
-    padding: const EdgeInsets.all(5),
-    child: SingleChildScrollView(
-      child: Column(
-        children: sem.modules.map((module) {
-          return Column(
-            children: [
-              NoteCard(
-                coef: module.coef,
-                cred: module.credits,
-                subject: module.title,
-                wTD: module.wTD,
-                wEX: module.wEX,
-                wTP: module.wTP,
-                onChanged: (td, exam, moy, coef, cred) {
-                  module.td = td;
-                  module.exam = exam;
-                  module.coef = coef;
-                  module.credits = cred;
-                  module.wTD = module.wTD;
-                  module.wEX = module.wEX;
-                  module.wTP = module.wTP;
-
-                  // يعيد حساب كل شيء
-                  sem.recompute();
-
-                  // لتحديث الواجهة
-                  (context as Element).markNeedsBuild();
-                },
-              ),
-              const SizedBox(height: 20),
-            ],
-          );
-        }).toList(),
-      ),
-    ),
-  );
-}
-
-/// بطاقة المادة NoteCard
-class NoteCard extends StatefulWidget {
-  final double coef;
-  final double cred;
-  final String subject;
-  final double wTD;
-  final double wEX;
-  final double wTP;
-  final Function(double td, double exam, double moy, double coef, double cred)
-      onChanged;
-
-  const NoteCard({
-    super.key,
-    required this.coef,
-    required this.cred,
-    required this.subject,
-    required this.onChanged,
-    required this.wTD,
-    required this.wEX,
-    required this.wTP,
-  });
-
-  @override
-  State<NoteCard> createState() => _NoteCardState();
-}
-
-class NoteResult {
-  final double td;
-  final double tp;
-  final double exam;
-  final double moy;
-  final double coef;
-  final double cred;
-
-  NoteResult(this.td, this.tp, this.exam, this.moy, this.coef, this.cred);
-}
-
-class _NoteCardState extends State<NoteCard> {
-  double td = 0.0;
-  double tp = 0.0;
-  double exam = 0.0;
-  double moy = 0.0;
-
-  late double coef;
-  late double cred;
-  late double wTD;
-  late double wEX;
-  late double wTP;
-
-  @override
-  void initState() {
-    super.initState();
-    cred = widget.cred; // نهيئه بالقيمة الأصلية
-    coef = widget.coef;
-    wTD = widget.wTD;
-    wEX = widget.wEX;
-    wTP = widget.wTP;
-  }
-
-  void onTDChanged(String v) {
-    setState(() {
-      td = double.tryParse(v) ?? 0.0;
-      calculateMoy();
-      notifyParent();
-    });
-  }
-
-  void notifyParent() {
-    widget.onChanged(td, exam, moy, coef, cred);
-  }
-
-  void onExamChanged(String v) {
-    setState(() {
-      exam = double.tryParse(v) ?? 0.0;
-      calculateMoy();
-      notifyParent();
-    });
-  }
-
-  void onTPChanged(String v) {
-    setState(() {
-      tp = double.tryParse(v) ?? 0.0;
-      calculateMoy();
-      notifyParent();
-    });
-  }
-
-  void calculateMoy() {
-// هنا معادلة حساب المعدل
-    moy = (td * wTD) + (exam * wEX) + (tp * wTP);
-  }
-
-  void updateCred(double newValue) {
-    setState(() {
-      cred = newValue;
-      notifyParent();
-    });
-  }
-
-  void updateCoef(double newValue) {
-    setState(() {
-      coef = newValue;
-      notifyParent();
-    });
-  }
-
-  void _showWeightsDialog() {
-    TextEditingController wTDController =
-        TextEditingController(text: wTD.toString());
-    TextEditingController wEXController =
-        TextEditingController(text: wEX.toString());
-    TextEditingController wTPController =
-        TextEditingController(text: wTP.toString());
-
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          title: Text(S.of(context).editWeights),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              FutureBuilder<String>(
-                future: translateSubject(context, widget.subject),
-                builder: (context, snapshot) {
-                  if (snapshot.connectionState == ConnectionState.waiting) {
-                    return Text('...'); // أثناء التحميل
-                  } else if (snapshot.hasError) {
-                    return Text(widget.subject); // fallback عند الخطأ
-                  } else {
-                    return Text(
-                      textAlign: TextAlign.start,
-                      snapshot.data!,
-                      overflow: TextOverflow.ellipsis,
-                      maxLines: 2,
-                      style: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    );
-                  }
-                },
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-              TextField(
-                  controller: wTDController,
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(labelText: "W. TD"),
-                  textAlign: TextAlign.center),
-              const SizedBox(
-                height: 10,
-              ),
-              TextField(
-                controller: wEXController,
-                keyboardType: TextInputType.number,
-                decoration: InputDecoration(
-                  labelText: "W. EXAM",
-                ),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              TextField(
-                controller: wTPController,
-                keyboardType: TextInputType.number,
-                decoration: InputDecoration(labelText: "W. TP"),
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
-          actions: [
-            TextButton(
-              onPressed: () {
-                setState(() {
-                  wTD = double.tryParse(wTDController.text) ?? wTD;
-                  wEX = double.tryParse(wEXController.text) ?? wEX;
-                  wTP = double.tryParse(wTPController.text) ?? wTP;
-                  calculateMoy();
-                  notifyParent();
-                });
-                Navigator.pop(context);
-              },
-              child: Text("OK"),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      height: 218,
-      padding: const EdgeInsets.all(13),
-      decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.surface,
-        borderRadius: BorderRadius.circular(30),
-        border: Border.all(
-          width: 3,
-          color: moy == 0
-              ? Theme.of(context).colorScheme.onSurface
-              : moy < 10
-                  ? Colors.red
-                  : Colors.green,
-        ),
-      ),
-      child: Column(
-        children: [
-          //------------------ الصف العلوي --------------------
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              // اسم المادة
-              Expanded(
-                child: Column(
-                  children: [
-                    FutureBuilder<String>(
-                      future: translateSubject(context, widget.subject),
-                      builder: (context, snapshot) {
-                        if (snapshot.connectionState ==
-                            ConnectionState.waiting) {
-                          return Text('...'); // أثناء التحميل
-                        } else if (snapshot.hasError) {
-                          return Text(widget.subject); // fallback عند الخطأ
-                        } else {
-                          return Text(
-                            snapshot.data!,
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 2,
-                            style: const TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          );
-                        }
-                      },
-                    ),
-                    Container(
-                      child: const SizedBox(
-                        width: 10,
-                        height: 15,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Row(
-                children: [
-                  // Coef
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      const Text("Coef", style: TextStyle(fontSize: 14)),
-                      const SizedBox(height: 2),
-                      Container(
-                        width: 60,
-                        height: 30,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                            color: Theme.of(context).colorScheme.surface,
-                            borderRadius: BorderRadius.circular(40),
-                            border: Border.all(
-                              width: 1,
-                              color: Theme.of(context).colorScheme.onSurface,
-                            )),
-                        child: TextField(
-                          controller: TextEditingController(
-                              text: coef.toStringAsFixed(0)),
-                          keyboardType: TextInputType.number,
-                          onChanged: (v) {
-                            final newValue = double.tryParse(v);
-                            if (newValue != null)
-                              setState(() => coef = newValue);
-                          },
-                          style: const TextStyle(fontSize: 15),
-                          textAlign: TextAlign.center,
-                          decoration: const InputDecoration(
-                            contentPadding: EdgeInsets.only(
-                                top: 2, bottom: 0, left: 0, right: 0),
-                            border: InputBorder
-                                .none, // إزالة الحد الافتراضي إذا تريد
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-
-                  const SizedBox(width: 5),
-
-                  // Cred
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      const Text("Cred", style: TextStyle(fontSize: 14)),
-                      const SizedBox(height: 2),
-                      Container(
-                          width: 60,
-                          height: 30,
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                              color: Theme.of(context).colorScheme.surface,
-                              borderRadius: BorderRadius.circular(40),
-                              border: Border.all(
-                                width: 1,
-                                color: Theme.of(context).colorScheme.onSurface,
-                              )),
-                          child: TextField(
-                            controller: TextEditingController(
-                                text: cred.toStringAsFixed(0)),
-                            keyboardType: TextInputType.number,
-                            onChanged: (v) {
-                              final newValue = double.tryParse(v);
-                              if (newValue != null)
-                                setState(() => cred = newValue);
-                            },
-                            style: const TextStyle(fontSize: 15),
-                            textAlign: TextAlign.center,
-                            decoration: const InputDecoration(
-                              contentPadding: EdgeInsets.only(
-                                  top: 2, bottom: 0, left: 0, right: 0),
-                              border: InputBorder
-                                  .none, // إزالة الحد الافتراضي إذا تريد
-                            ),
-                          )),
-                    ],
-                  ),
-                ],
-              ),
-            ],
-          ),
-
-          const SizedBox(height: 5),
-          Container(
-            height: 2,
-            color: moy == 0
-                ? Theme.of(context).colorScheme.onSurface
-                : moy < 10
-                    ? Colors.red
-                    : Colors.green,
-          ),
-
-          Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-            Text(
-              S.of(context).notesTdTpExam,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-            IconButton(
-              icon: const Icon(Icons.info_outline, size: 20),
-              onPressed: () {
-                _showWeightsDialog();
-              },
-            ),
-          ]),
-
-          const SizedBox(height: 0),
-
-          //------------------ حقول TD + EXAM + MOY --------------------
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(children: [
-                // EXAM
-                if (wEX != 0)
-                  Column(
-                    children: [
-                      const Text("EXAM"),
-                      const SizedBox(height: 2),
-                      Container(
-                        width: 70,
-                        height: 40,
-                        decoration: BoxDecoration(
-                          color: Theme.of(context).colorScheme.surface,
-                          borderRadius: BorderRadius.circular(40),
-                        ),
-                        child: TextField(
-                          textAlign: TextAlign.center,
-                          maxLength: 5,
-                          keyboardType: TextInputType.number,
-                          onChanged: (v) {
-                            final sanitized = v.replaceAll(',', '.');
-                            onExamChanged(sanitized);
-                          },
-                          decoration: const InputDecoration(
-                            contentPadding: EdgeInsets.only(
-                                top: 50, bottom: 23, left: 0, right: 0),
-                            border: InputBorder.none,
-                            counterText: '',
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                const SizedBox(
-                  width: 5,
-                ),
-
-                // TD
-                if (wTD != 0)
-                  Column(
-                    children: [
-                      const Text("TD"),
-                      const SizedBox(height: 2),
-                      Container(
-                        width: 70,
-                        height: 40,
-                        decoration: BoxDecoration(
-                          color: Theme.of(context).colorScheme.surface,
-                          borderRadius: BorderRadius.circular(40),
-                        ),
-                        child: TextField(
-                          textAlign: TextAlign.center,
-                          maxLength: 5,
-                          keyboardType: TextInputType.number,
-                          onChanged: (v) {
-                            final sanitized = v.replaceAll(',', '.');
-                            onTDChanged(sanitized);
-                          },
-                          decoration: const InputDecoration(
-                            contentPadding: EdgeInsets.only(
-                                top: 50, bottom: 23, left: 0, right: 0),
-                            border: InputBorder.none,
-                            counterText: '',
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                const SizedBox(
-                  width: 5,
-                ),
-                //TP
-                if (wTP != 0)
-                  Column(
-                    children: [
-                      const Text("TP"),
-                      const SizedBox(height: 2),
-                      Container(
-                        width: 70,
-                        height: 40,
-                        decoration: BoxDecoration(
-                          color: Theme.of(context).colorScheme.surface,
-                          borderRadius: BorderRadius.circular(40),
-                        ),
-                        child: TextField(
-                          textAlign: TextAlign.center,
-                          maxLength: 5,
-                          keyboardType: TextInputType.number,
-                          onChanged: (v) {
-                            final sanitized = v.replaceAll(',', '.');
-                            onTPChanged(sanitized);
-                          },
-                          decoration: const InputDecoration(
-                            contentPadding: EdgeInsets.only(
-                                top: 50, bottom: 23, left: 0, right: 0),
-                            border: InputBorder.none,
-                            counterText: '',
-                          ),
-                        ),
-                      ),
-                    ],
-                  )
-              ]),
-              // MOY
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  const Text("Moy:        ",
-                      style: TextStyle(
-                        fontSize: 15,
-                      )),
-                  Text(
-                    moy.toStringAsFixed(2),
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: moy == 0
-                          ? Theme.of(context).colorScheme.onSurface
-                          : moy < 10
-                              ? Colors.red
-                              : Colors.green,
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 /// ------------------------ Résumé annuel -------------------------------
 class _AnnualSummaryCard extends StatelessWidget {
   const _AnnualSummaryCard({
@@ -10845,18 +11029,7 @@ class PdfReportService {
   }
 }
 
-// زر اختصار يفتح الدراسة (للاستخدام داخل AppBar.actions)
-// class StudiesActionButton extends StatelessWidget {
-//   const StudiesActionButton({super.key});
-//   @override
-//   Widget build(BuildContext context) {
-//     return IconButton(
-//       tooltip: 'الدراسة (كليات → تخصّصات → مسارات → جدول)',
-//       icon: const Icon(Icons.menu_book_outlined),
-//       onPressed: () => openStudiesNavigator(context),
-//     );
-//   }
-// }
+
 
 // ---------------------------------------------------------------------------
 // توافقية: بعض الأقسام القديمة كانت تستدعي CalculatorScreen بالاسم القديم.

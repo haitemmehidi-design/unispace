@@ -26,252 +26,207 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-    "Fail": MessageLookupByLibrary.simpleMessage(" Échoué"),
-    "Pass": MessageLookupByLibrary.simpleMessage(" Réussi"),
-    "aboutApp": MessageLookupByLibrary.simpleMessage(
-      "À propos de l\'application",
-    ),
-    "aboutAppDetails": MessageLookupByLibrary.simpleMessage(
-      "UniSpace ne collecte pas de données personnelles en dehors de Firebase. Toutes les données sont sécurisées.",
-    ),
-    "accounting": MessageLookupByLibrary.simpleMessage("Comptabilité"),
-    "accountingTaxation": MessageLookupByLibrary.simpleMessage(
-      "Comptabilité et fiscalité",
-    ),
-    "add": MessageLookupByLibrary.simpleMessage("Ajouter"),
-    "advancedPublicLaw": MessageLookupByLibrary.simpleMessage(
-      "Droit public approfondi",
-    ),
-    "arabic": MessageLookupByLibrary.simpleMessage("Arabe"),
-    "archive": MessageLookupByLibrary.simpleMessage("Archives"),
-    "basicEducation": MessageLookupByLibrary.simpleMessage(
-      "Enseignement de base",
-    ),
-    "basicEducationDept": MessageLookupByLibrary.simpleMessage(
-      "Département de l\'enseignement de base",
-    ),
-    "basicUnit": MessageLookupByLibrary.simpleMessage("Unité fondamentale"),
-    "blockAccount": MessageLookupByLibrary.simpleMessage("Bloquer le compte"),
-    "businessAdministration": MessageLookupByLibrary.simpleMessage(
-      "Administration des affaires",
-    ),
-    "businessLaw": MessageLookupByLibrary.simpleMessage("Droit des affaires"),
-    "calculate": MessageLookupByLibrary.simpleMessage("Calculer"),
-    "cancel": MessageLookupByLibrary.simpleMessage("Annuler"),
-    "changeLanguage": MessageLookupByLibrary.simpleMessage("Changer la langue"),
-    "changeTheme": MessageLookupByLibrary.simpleMessage("Changer le thème"),
-    "chooseLanguage": MessageLookupByLibrary.simpleMessage("Choisir la langue"),
-    "chooseTheme": MessageLookupByLibrary.simpleMessage("Choisir le thème"),
-    "clipboard": MessageLookupByLibrary.simpleMessage("Presse-papiers"),
-    "close": MessageLookupByLibrary.simpleMessage("Fermer"),
-    "coefficient": MessageLookupByLibrary.simpleMessage("Coef :"),
-    "comment": MessageLookupByLibrary.simpleMessage("Commentaire"),
-    "comments": MessageLookupByLibrary.simpleMessage("Commentaires"),
-    "commentsCount": m0,
-    "commercialSciences": MessageLookupByLibrary.simpleMessage(
-      "Sciences commerciales",
-    ),
-    "commercialSciencesDept": MessageLookupByLibrary.simpleMessage(
-      "Département des sciences commerciales",
-    ),
-    "commonCore": MessageLookupByLibrary.simpleMessage("Tronc commun"),
-    "community": MessageLookupByLibrary.simpleMessage("Communauté"),
-    "contactUs": MessageLookupByLibrary.simpleMessage("Contactez-nous"),
-    "content": MessageLookupByLibrary.simpleMessage("Contenu"),
-    "copyText": MessageLookupByLibrary.simpleMessage("Copier le texte"),
-    "corporateFinance": MessageLookupByLibrary.simpleMessage(
-      "Finance d\'entreprise",
-    ),
-    "corporateFinancialManagement": MessageLookupByLibrary.simpleMessage(
-      "Gestion financière des entreprises",
-    ),
-    "createPost": MessageLookupByLibrary.simpleMessage("Publication"),
-    "createPoste": MessageLookupByLibrary.simpleMessage(
-      "Créer une publication",
-    ),
-    "credits": MessageLookupByLibrary.simpleMessage("Crédits :"),
-    "criminalLaw": MessageLookupByLibrary.simpleMessage(
-      "Droit pénal et sciences criminelles",
-    ),
-    "dark": MessageLookupByLibrary.simpleMessage("Sombre"),
-    "darkMode": MessageLookupByLibrary.simpleMessage("Mode sombre"),
-    "department": MessageLookupByLibrary.simpleMessage("Department"),
-    "economics": MessageLookupByLibrary.simpleMessage("Sciences économiques"),
-    "economicsDept": MessageLookupByLibrary.simpleMessage(
-      "Département des sciences économiques",
-    ),
-    "email": MessageLookupByLibrary.simpleMessage("E-mail"),
-    "energyMiningLaw": MessageLookupByLibrary.simpleMessage(
-      "Droit de l’énergie et des mines",
-    ),
-    "exploratoryUnit": MessageLookupByLibrary.simpleMessage(
-      "Unité exploratoire",
-    ),
-    "faculties": MessageLookupByLibrary.simpleMessage("Facultés"),
-    "faculty": MessageLookupByLibrary.simpleMessage("Faculty"),
-    "facultyEconomics": MessageLookupByLibrary.simpleMessage(
-      "Faculté des sciences économiques, commerciales et des sciences de gestion",
-    ),
-    "facultyLawPolitical": MessageLookupByLibrary.simpleMessage(
-      "Faculté de droit et des sciences politiques",
-    ),
-    "familyLaw": MessageLookupByLibrary.simpleMessage("Droit de la famille"),
-    "finance": MessageLookupByLibrary.simpleMessage("Finance"),
-    "financeInternationalTrade": MessageLookupByLibrary.simpleMessage(
-      "Finance et commerce international",
-    ),
-    "financialAccounting": MessageLookupByLibrary.simpleMessage(
-      "Sciences financières et comptables",
-    ),
-    "financialAccountingDept": MessageLookupByLibrary.simpleMessage(
-      "Département des sciences financières et comptables",
-    ),
-    "financialManagement": MessageLookupByLibrary.simpleMessage(
-      "Gestion financière",
-    ),
-    "followComment": MessageLookupByLibrary.simpleMessage(
-      "Suivre le commentaire",
-    ),
-    "following": MessageLookupByLibrary.simpleMessage("Following"),
-    "hashtag": MessageLookupByLibrary.simpleMessage("#"),
-    "hide": MessageLookupByLibrary.simpleMessage("Masquer"),
-    "home": MessageLookupByLibrary.simpleMessage("Accueil"),
-    "homeSubtitle": MessageLookupByLibrary.simpleMessage(
-      "Parcourez les facultés, calculez votre moyenne, partagez vos idées et notez facilement.",
-    ),
-    "horizontalUnit": MessageLookupByLibrary.simpleMessage("Unité horizontale"),
-    "hotelTourismMarketing": MessageLookupByLibrary.simpleMessage(
-      "Marketing hôtelier et touristique",
-    ),
-    "humanResourcesManagement": MessageLookupByLibrary.simpleMessage(
-      "Gestion des ressources humaines",
-    ),
-    "internationalCooperation": MessageLookupByLibrary.simpleMessage(
-      "Coopération internationale",
-    ),
-    "internationalEconomics": MessageLookupByLibrary.simpleMessage(
-      "Économie internationale",
-    ),
-    "internationalRelations": MessageLookupByLibrary.simpleMessage(
-      "Relations internationales",
-    ),
-    "law": MessageLookupByLibrary.simpleMessage("Droit"),
-    "legalProfessionsLaw": MessageLookupByLibrary.simpleMessage(
-      "Droit des professions juridiques et judiciaires",
-    ),
-    "light": MessageLookupByLibrary.simpleMessage("Clair"),
-    "lightMode": MessageLookupByLibrary.simpleMessage("Mode clair"),
-    "localAdministration": MessageLookupByLibrary.simpleMessage(
-      "Administration locale",
-    ),
-    "login": MessageLookupByLibrary.simpleMessage("Se connecter"),
-    "logout": MessageLookupByLibrary.simpleMessage("Se déconnecter"),
-    "major": MessageLookupByLibrary.simpleMessage("Major"),
-    "majors": MessageLookupByLibrary.simpleMessage("Spécialités"),
-    "managementSciences": MessageLookupByLibrary.simpleMessage(
-      "Sciences de gestion",
-    ),
-    "managementSciencesDept": MessageLookupByLibrary.simpleMessage(
-      "Département des sciences de gestion",
-    ),
-    "maritimePortLaw": MessageLookupByLibrary.simpleMessage(
-      "Droit maritime et portuaire",
-    ),
-    "marketing": MessageLookupByLibrary.simpleMessage("Marketing"),
-    "mediaUrl": MessageLookupByLibrary.simpleMessage("Lien image/vidéo"),
-    "methodologicalUnit": MessageLookupByLibrary.simpleMessage(
-      "Unité méthodologique",
-    ),
-    "monetaryFinancialEconomics": MessageLookupByLibrary.simpleMessage(
-      "Économie monétaire et financière",
-    ),
-    "mood": MessageLookupByLibrary.simpleMessage("Humeur"),
-    "name": MessageLookupByLibrary.simpleMessage("Nom"),
-    "newPost": MessageLookupByLibrary.simpleMessage("Nouvelle publication"),
-    "noMajorsYet": MessageLookupByLibrary.simpleMessage(
-      "Aucune spécialité enregistrée pour le moment",
-    ),
-    "noNotesYet": MessageLookupByLibrary.simpleMessage(
-      "Aucune note pour le moment",
-    ),
-    "noPostsYet": MessageLookupByLibrary.simpleMessage(
-      "Aucune publication pour le moment",
-    ),
-    "noSubjectsThisSemester": MessageLookupByLibrary.simpleMessage(
-      "Aucune matière dans ce semestre.",
-    ),
-    "notRegistered": MessageLookupByLibrary.simpleMessage("Non enregistré"),
-    "note": MessageLookupByLibrary.simpleMessage("Note"),
-    "notesTdTpExam": MessageLookupByLibrary.simpleMessage("Notes (TD/TP/Exam)"),
-    "oneMajor": MessageLookupByLibrary.simpleMessage("Une spécialité"),
-    "otherNotes": MessageLookupByLibrary.simpleMessage("Autres notes"),
-    "password": MessageLookupByLibrary.simpleMessage("Mot de passe"),
-    "pinNote": MessageLookupByLibrary.simpleMessage("Épingler la note"),
-    "pinned": MessageLookupByLibrary.simpleMessage("Épinglées"),
-    "politicalAdministrativeOrgs": MessageLookupByLibrary.simpleMessage(
-      "Organisations politiques et administratives",
-    ),
-    "politicalSciences": MessageLookupByLibrary.simpleMessage(
-      "Sciences politiques",
-    ),
-    "post": MessageLookupByLibrary.simpleMessage(
-      "Votre publication a été publiée ✅",
-    ),
-    "posted": MessageLookupByLibrary.simpleMessage("Publication"),
-    "posts": MessageLookupByLibrary.simpleMessage("Publications"),
-    "privacyPolicy": MessageLookupByLibrary.simpleMessage(
-      "Politique de confidentialité",
-    ),
-    "privateLaw": MessageLookupByLibrary.simpleMessage("Droit privé"),
-    "profile": MessageLookupByLibrary.simpleMessage("Profile"),
-    "publicLaw": MessageLookupByLibrary.simpleMessage("Droit public"),
-    "publish": MessageLookupByLibrary.simpleMessage("Publier"),
-    "quickCalc": MessageLookupByLibrary.simpleMessage("Calcul rapide"),
-    "quickCalc2": MessageLookupByLibrary.simpleMessage("Calcul rapide"),
-    "register": MessageLookupByLibrary.simpleMessage("S\'inscrire"),
-    "report": MessageLookupByLibrary.simpleMessage("Signaler"),
-    "resetFailed": m1,
-    "resetPassword": MessageLookupByLibrary.simpleMessage(
-      "Réinitialiser le mot de passe",
-    ),
-    "resetSent": MessageLookupByLibrary.simpleMessage(
-      "Le lien de réinitialisation a été envoyé",
-    ),
-    "save": MessageLookupByLibrary.simpleMessage("Enregistrer"),
-    "savePost": MessageLookupByLibrary.simpleMessage(
-      "Enregistrer la publication",
-    ),
-    "searchClipboard": MessageLookupByLibrary.simpleMessage(
-      "Rechercher dans le presse-papiers…",
-    ),
-    "searchFaculty": MessageLookupByLibrary.simpleMessage(
-      "Rechercher une faculté...",
-    ),
-    "sections": MessageLookupByLibrary.simpleMessage("Sections"),
-    "servicesMarketing": MessageLookupByLibrary.simpleMessage(
-      "Marketing des services",
-    ),
-    "share": MessageLookupByLibrary.simpleMessage("Partager"),
-    "startDiscussion": MessageLookupByLibrary.simpleMessage(
-      "Commencez la première discussion dans la communauté et partagez votre expérience avec vos collègues.",
-    ),
-    "studyResults": MessageLookupByLibrary.simpleMessage("Résultats d\'étude"),
-    "system": MessageLookupByLibrary.simpleMessage("Système"),
-    "systemMode": MessageLookupByLibrary.simpleMessage("Mode système"),
-    "taxLaw": MessageLookupByLibrary.simpleMessage("Droit fiscal"),
-    "title": MessageLookupByLibrary.simpleMessage("Titre"),
-    "university": MessageLookupByLibrary.simpleMessage("University"),
-    "userInfo": MessageLookupByLibrary.simpleMessage("User Information"),
-    "viewAll": MessageLookupByLibrary.simpleMessage("Voir tout"),
-    "welcomeEmoji": MessageLookupByLibrary.simpleMessage("Bienvenue 👋"),
-    "welcomeUniSpace": MessageLookupByLibrary.simpleMessage(
-      "Bienvenue sur UniSpace",
-    ),
-    "writeComment": MessageLookupByLibrary.simpleMessage(
-      "Écrivez votre commentaire…",
-    ),
-    "writeYourComment": MessageLookupByLibrary.simpleMessage(
-      "Écrivez votre commentaire",
-    ),
-  };
+        "Fail": MessageLookupByLibrary.simpleMessage(" Échoué"),
+        "Pass": MessageLookupByLibrary.simpleMessage(" Réussi"),
+        "aboutApp":
+            MessageLookupByLibrary.simpleMessage("À propos de l\'application"),
+        "aboutAppDetails": MessageLookupByLibrary.simpleMessage(
+            "UniSpace ne collecte pas de données personnelles en dehors de Firebase. Toutes les données sont sécurisées."),
+        "accounting": MessageLookupByLibrary.simpleMessage("Comptabilité"),
+        "accountingTaxation":
+            MessageLookupByLibrary.simpleMessage("Comptabilité et fiscalité"),
+        "add": MessageLookupByLibrary.simpleMessage("Ajouter"),
+        "advancedPublicLaw":
+            MessageLookupByLibrary.simpleMessage("Droit public approfondi"),
+        "arabic": MessageLookupByLibrary.simpleMessage("Arabe"),
+        "archive": MessageLookupByLibrary.simpleMessage("Archives"),
+        "basicEducation":
+            MessageLookupByLibrary.simpleMessage("Enseignement de base"),
+        "basicEducationDept": MessageLookupByLibrary.simpleMessage(
+            "Département de l\'enseignement de base"),
+        "basicUnit": MessageLookupByLibrary.simpleMessage("Unité fondamentale"),
+        "blockAccount":
+            MessageLookupByLibrary.simpleMessage("Bloquer le compte"),
+        "businessAdministration":
+            MessageLookupByLibrary.simpleMessage("Administration des affaires"),
+        "businessLaw":
+            MessageLookupByLibrary.simpleMessage("Droit des affaires"),
+        "calculate": MessageLookupByLibrary.simpleMessage("Calculer"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Annuler"),
+        "changeLanguage":
+            MessageLookupByLibrary.simpleMessage("Changer la langue"),
+        "changeTheme": MessageLookupByLibrary.simpleMessage("Changer le thème"),
+        "chooseLanguage":
+            MessageLookupByLibrary.simpleMessage("Choisir la langue"),
+        "chooseTheme": MessageLookupByLibrary.simpleMessage("Choisir le thème"),
+        "clipboard": MessageLookupByLibrary.simpleMessage("Note-pade"),
+        "close": MessageLookupByLibrary.simpleMessage("Fermer"),
+        "coefficient": MessageLookupByLibrary.simpleMessage("Coef :"),
+        "comment": MessageLookupByLibrary.simpleMessage("Commentaire"),
+        "comments": MessageLookupByLibrary.simpleMessage("Commentaires"),
+        "commentsCount": m0,
+        "commercialSciences":
+            MessageLookupByLibrary.simpleMessage("Sciences commerciales"),
+        "commercialSciencesDept": MessageLookupByLibrary.simpleMessage(
+            "Département des sciences commerciales"),
+        "commonCore": MessageLookupByLibrary.simpleMessage("Tronc commun"),
+        "community": MessageLookupByLibrary.simpleMessage("Communauté"),
+        "contactUs": MessageLookupByLibrary.simpleMessage("Contactez-nous"),
+        "content": MessageLookupByLibrary.simpleMessage("Contenu"),
+        "copyText": MessageLookupByLibrary.simpleMessage("Copier le texte"),
+        "corporateFinance":
+            MessageLookupByLibrary.simpleMessage("Finance d\'entreprise"),
+        "corporateFinancialManagement": MessageLookupByLibrary.simpleMessage(
+            "Gestion financière des entreprises"),
+        "createPost": MessageLookupByLibrary.simpleMessage("Publication"),
+        "createPoste":
+            MessageLookupByLibrary.simpleMessage("Créer une publication"),
+        "credits": MessageLookupByLibrary.simpleMessage("Crédits :"),
+        "criminalLaw": MessageLookupByLibrary.simpleMessage(
+            "Droit pénal et sciences criminelles"),
+        "dark": MessageLookupByLibrary.simpleMessage("Sombre"),
+        "darkMode": MessageLookupByLibrary.simpleMessage("Mode sombre"),
+        "department": MessageLookupByLibrary.simpleMessage("Department"),
+        "economics":
+            MessageLookupByLibrary.simpleMessage("Sciences économiques"),
+        "economicsDept": MessageLookupByLibrary.simpleMessage(
+            "Département des sciences économiques"),
+        "email": MessageLookupByLibrary.simpleMessage("E-mail"),
+        "energyMiningLaw": MessageLookupByLibrary.simpleMessage(
+            "Droit de l’énergie et des mines"),
+        "exploratoryUnit":
+            MessageLookupByLibrary.simpleMessage("Unité exploratoire"),
+        "faculties": MessageLookupByLibrary.simpleMessage("Facultés"),
+        "faculty": MessageLookupByLibrary.simpleMessage("Faculty"),
+        "facultyEconomics": MessageLookupByLibrary.simpleMessage(
+            "Faculté des sciences économiques, commerciales et des sciences de gestion"),
+        "facultyLawPolitical": MessageLookupByLibrary.simpleMessage(
+            "Faculté de droit et des sciences politiques"),
+        "familyLaw":
+            MessageLookupByLibrary.simpleMessage("Droit de la famille"),
+        "finance": MessageLookupByLibrary.simpleMessage("Finance"),
+        "financeInternationalTrade": MessageLookupByLibrary.simpleMessage(
+            "Finance et commerce international"),
+        "financialAccounting": MessageLookupByLibrary.simpleMessage(
+            "Sciences financières et comptables"),
+        "financialAccountingDept": MessageLookupByLibrary.simpleMessage(
+            "Département des sciences financières et comptables"),
+        "financialManagement":
+            MessageLookupByLibrary.simpleMessage("Gestion financière"),
+        "followComment":
+            MessageLookupByLibrary.simpleMessage("Suivre le commentaire"),
+        "following": MessageLookupByLibrary.simpleMessage("Following"),
+        "hashtag": MessageLookupByLibrary.simpleMessage("#"),
+        "hide": MessageLookupByLibrary.simpleMessage("Masquer"),
+        "home": MessageLookupByLibrary.simpleMessage("Accueil"),
+        "homeSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Parcourez les facultés, calculez votre moyenne, partagez vos idées et notez facilement."),
+        "horizontalUnit":
+            MessageLookupByLibrary.simpleMessage("Unité horizontale"),
+        "hotelTourismMarketing": MessageLookupByLibrary.simpleMessage(
+            "Marketing hôtelier et touristique"),
+        "humanResourcesManagement": MessageLookupByLibrary.simpleMessage(
+            "Gestion des ressources humaines"),
+        "internationalCooperation":
+            MessageLookupByLibrary.simpleMessage("Coopération internationale"),
+        "internationalEconomics":
+            MessageLookupByLibrary.simpleMessage("Économie internationale"),
+        "internationalRelations":
+            MessageLookupByLibrary.simpleMessage("Relations internationales"),
+        "law": MessageLookupByLibrary.simpleMessage("Droit"),
+        "legalProfessionsLaw": MessageLookupByLibrary.simpleMessage(
+            "Droit des professions juridiques et judiciaires"),
+        "light": MessageLookupByLibrary.simpleMessage("Clair"),
+        "lightMode": MessageLookupByLibrary.simpleMessage("Mode clair"),
+        "localAdministration":
+            MessageLookupByLibrary.simpleMessage("Administration locale"),
+        "login": MessageLookupByLibrary.simpleMessage("Se connecter"),
+        "logout": MessageLookupByLibrary.simpleMessage("Se déconnecter"),
+        "major": MessageLookupByLibrary.simpleMessage("Major"),
+        "majors": MessageLookupByLibrary.simpleMessage("Spécialités"),
+        "managementSciences":
+            MessageLookupByLibrary.simpleMessage("Sciences de gestion"),
+        "managementSciencesDept": MessageLookupByLibrary.simpleMessage(
+            "Département des sciences de gestion"),
+        "maritimePortLaw":
+            MessageLookupByLibrary.simpleMessage("Droit maritime et portuaire"),
+        "marketing": MessageLookupByLibrary.simpleMessage("Marketing"),
+        "mediaUrl": MessageLookupByLibrary.simpleMessage("Lien image/vidéo"),
+        "methodologicalUnit":
+            MessageLookupByLibrary.simpleMessage("Unité méthodologique"),
+        "monetaryFinancialEconomics": MessageLookupByLibrary.simpleMessage(
+            "Économie monétaire et financière"),
+        "mood": MessageLookupByLibrary.simpleMessage("Humeur"),
+        "name": MessageLookupByLibrary.simpleMessage("Nom"),
+        "newPost": MessageLookupByLibrary.simpleMessage("Nouvelle publication"),
+        "noMajorsYet": MessageLookupByLibrary.simpleMessage(
+            "Aucune spécialité enregistrée pour le moment"),
+        "noNotesYet":
+            MessageLookupByLibrary.simpleMessage("Aucune note pour le moment"),
+        "noPostsYet": MessageLookupByLibrary.simpleMessage(
+            "Aucune publication pour le moment"),
+        "noSubjectsThisSemester": MessageLookupByLibrary.simpleMessage(
+            "Aucune matière dans ce semestre."),
+        "notRegistered": MessageLookupByLibrary.simpleMessage("Non enregistré"),
+        "note": MessageLookupByLibrary.simpleMessage("Note"),
+        "notesTdTpExam":
+            MessageLookupByLibrary.simpleMessage("Notes (TD/TP/Exam)"),
+        "oneMajor": MessageLookupByLibrary.simpleMessage("Une spécialité"),
+        "otherNotes": MessageLookupByLibrary.simpleMessage("Autres notes"),
+        "password": MessageLookupByLibrary.simpleMessage("Mot de passe"),
+        "pinNote": MessageLookupByLibrary.simpleMessage("Épingler la note"),
+        "pinned": MessageLookupByLibrary.simpleMessage("Épinglées"),
+        "politicalAdministrativeOrgs": MessageLookupByLibrary.simpleMessage(
+            "Organisations politiques et administratives"),
+        "politicalSciences":
+            MessageLookupByLibrary.simpleMessage("Sciences politiques"),
+        "post": MessageLookupByLibrary.simpleMessage(
+            "Votre publication a été publiée ✅"),
+        "posted": MessageLookupByLibrary.simpleMessage("Publication"),
+        "posts": MessageLookupByLibrary.simpleMessage("Publications"),
+        "privacyPolicy": MessageLookupByLibrary.simpleMessage(
+            "Politique de confidentialité"),
+        "privateLaw": MessageLookupByLibrary.simpleMessage("Droit privé"),
+        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+        "publicLaw": MessageLookupByLibrary.simpleMessage("Droit public"),
+        "publish": MessageLookupByLibrary.simpleMessage("Publier"),
+        "quickCalc": MessageLookupByLibrary.simpleMessage("Calcul rapide"),
+        "quickCalc2": MessageLookupByLibrary.simpleMessage("Calcul rapide"),
+        "register": MessageLookupByLibrary.simpleMessage("S\'inscrire"),
+        "report": MessageLookupByLibrary.simpleMessage("Signaler"),
+        "resetFailed": m1,
+        "resetPassword": MessageLookupByLibrary.simpleMessage(
+            "Réinitialiser le mot de passe"),
+        "resetSent": MessageLookupByLibrary.simpleMessage(
+            "Le lien de réinitialisation a été envoyé"),
+        "save": MessageLookupByLibrary.simpleMessage("Enregistrer"),
+        "savePost":
+            MessageLookupByLibrary.simpleMessage("Enregistrer la publication"),
+        "searchClipboard": MessageLookupByLibrary.simpleMessage(
+            "Rechercher dans le Note-pade…"),
+        "searchFaculty":
+            MessageLookupByLibrary.simpleMessage("Rechercher une faculté..."),
+        "sections": MessageLookupByLibrary.simpleMessage("Sections"),
+        "servicesMarketing":
+            MessageLookupByLibrary.simpleMessage("Marketing des services"),
+        "share": MessageLookupByLibrary.simpleMessage("Partager"),
+        "startDiscussion": MessageLookupByLibrary.simpleMessage(
+            "Commencez la première discussion dans la communauté et partagez votre expérience avec vos collègues."),
+        "studyResults":
+            MessageLookupByLibrary.simpleMessage("Résultats d\'étude"),
+        "system": MessageLookupByLibrary.simpleMessage("Système"),
+        "systemMode": MessageLookupByLibrary.simpleMessage("Mode système"),
+        "taxLaw": MessageLookupByLibrary.simpleMessage("Droit fiscal"),
+        "title": MessageLookupByLibrary.simpleMessage("Titre"),
+        "university": MessageLookupByLibrary.simpleMessage("University"),
+        "userInfo": MessageLookupByLibrary.simpleMessage("User Information"),
+        "viewAll": MessageLookupByLibrary.simpleMessage("Voir tout"),
+        "welcomeEmoji": MessageLookupByLibrary.simpleMessage("Bienvenue 👋"),
+        "welcomeUniSpace":
+            MessageLookupByLibrary.simpleMessage("Bienvenue sur UniSpace"),
+        "writeComment":
+            MessageLookupByLibrary.simpleMessage("Écrivez votre commentaire…"),
+        "writeYourComment":
+            MessageLookupByLibrary.simpleMessage("Écrivez votre commentaire")
+      };
 }

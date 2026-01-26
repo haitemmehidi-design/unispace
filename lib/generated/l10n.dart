@@ -18,10 +18,8 @@ class S {
   static S? _current;
 
   static S get current {
-    assert(
-      _current != null,
-      'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.',
-    );
+    assert(_current != null,
+        'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.');
     return _current!;
   }
 
@@ -43,10 +41,8 @@ class S {
 
   static S of(BuildContext context) {
     final instance = S.maybeOf(context);
-    assert(
-      instance != null,
-      'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?',
-    );
+    assert(instance != null,
+        'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?');
     return instance!;
   }
 
@@ -56,22 +52,42 @@ class S {
 
   /// `Sections`
   String get sections {
-    return Intl.message('Sections', name: 'sections', desc: '', args: []);
+    return Intl.message(
+      'Sections',
+      name: 'sections',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Majors`
   String get majors {
-    return Intl.message('Majors', name: 'majors', desc: '', args: []);
+    return Intl.message(
+      'Majors',
+      name: 'majors',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Comments`
   String get comments {
-    return Intl.message('Comments', name: 'comments', desc: '', args: []);
+    return Intl.message(
+      'Comments',
+      name: 'comments',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Comment`
   String get comment {
-    return Intl.message('Comment', name: 'comment', desc: '', args: []);
+    return Intl.message(
+      'Comment',
+      name: 'comment',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Write your comment`
@@ -86,23 +102,38 @@ class S {
 
   /// `Publish`
   String get publish {
-    return Intl.message('Publish', name: 'publish', desc: '', args: []);
+    return Intl.message(
+      'Publish',
+      name: 'publish',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Cancel`
   String get cancel {
-    return Intl.message('Cancel', name: 'cancel', desc: '', args: []);
+    return Intl.message(
+      'Cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Post`
   String get posted {
-    return Intl.message('Post', name: 'posted', desc: '', args: []);
+    return Intl.message(
+      'Post',
+      name: 'posted',
+      desc: '',
+      args: [],
+    );
   }
 
-  /// `Search inside clipboard…`
+  /// `Search inside Note-pade…`
   String get searchClipboard {
     return Intl.message(
-      'Search inside clipboard…',
+      'Search inside Note-pade…',
       name: 'searchClipboard',
       desc: '',
       args: [],
@@ -111,62 +142,122 @@ class S {
 
   /// `Note`
   String get note {
-    return Intl.message('Note', name: 'note', desc: '', args: []);
+    return Intl.message(
+      'Note',
+      name: 'note',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Title`
   String get title {
-    return Intl.message('Title', name: 'title', desc: '', args: []);
+    return Intl.message(
+      'Title',
+      name: 'title',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Content`
   String get content {
-    return Intl.message('Content', name: 'content', desc: '', args: []);
+    return Intl.message(
+      'Content',
+      name: 'content',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Save`
   String get save {
-    return Intl.message('Save', name: 'save', desc: '', args: []);
+    return Intl.message(
+      'Save',
+      name: 'save',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Pin Note`
   String get pinNote {
-    return Intl.message('Pin Note', name: 'pinNote', desc: '', args: []);
+    return Intl.message(
+      'Pin Note',
+      name: 'pinNote',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `No notes yet`
   String get noNotesYet {
-    return Intl.message('No notes yet', name: 'noNotesYet', desc: '', args: []);
+    return Intl.message(
+      'No notes yet',
+      name: 'noNotesYet',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Archive`
   String get archive {
-    return Intl.message('Archive', name: 'archive', desc: '', args: []);
+    return Intl.message(
+      'Archive',
+      name: 'archive',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Home`
   String get home {
-    return Intl.message('Home', name: 'home', desc: '', args: []);
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Community`
   String get community {
-    return Intl.message('Community', name: 'community', desc: '', args: []);
+    return Intl.message(
+      'Community',
+      name: 'community',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `View All`
   String get viewAll {
-    return Intl.message('View All', name: 'viewAll', desc: '', args: []);
+    return Intl.message(
+      'View All',
+      name: 'viewAll',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Faculties`
   String get faculties {
-    return Intl.message('Faculties', name: 'faculties', desc: '', args: []);
+    return Intl.message(
+      'Faculties',
+      name: 'faculties',
+      desc: '',
+      args: [],
+    );
   }
 
-  /// `Clipboard`
+  /// `Note-pade`
   String get clipboard {
-    return Intl.message('Clipboard', name: 'clipboard', desc: '', args: []);
+    return Intl.message(
+      'Note-pade',
+      name: 'clipboard',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Change Theme`
@@ -201,17 +292,32 @@ class S {
 
   /// `Logout`
   String get logout {
-    return Intl.message('Logout', name: 'logout', desc: '', args: []);
+    return Intl.message(
+      'Logout',
+      name: 'logout',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Login`
   String get login {
-    return Intl.message('Login', name: 'login', desc: '', args: []);
+    return Intl.message(
+      'Login',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `About the App`
   String get aboutApp {
-    return Intl.message('About the App', name: 'aboutApp', desc: '', args: []);
+    return Intl.message(
+      'About the App',
+      name: 'aboutApp',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Privacy Policy`
@@ -226,7 +332,12 @@ class S {
 
   /// `Welcome 👋`
   String get welcomeEmoji {
-    return Intl.message('Welcome 👋', name: 'welcomeEmoji', desc: '', args: []);
+    return Intl.message(
+      'Welcome 👋',
+      name: 'welcomeEmoji',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Browse faculties, calculate your GPA, share your ideas, and write notes easily.`
@@ -271,12 +382,22 @@ class S {
 
   /// `Email`
   String get email {
-    return Intl.message('Email', name: 'email', desc: '', args: []);
+    return Intl.message(
+      'Email',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Password`
   String get password {
-    return Intl.message('Password', name: 'password', desc: '', args: []);
+    return Intl.message(
+      'Password',
+      name: 'password',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Reset link has been sent`
@@ -311,17 +432,32 @@ class S {
 
   /// `Pinned`
   String get pinned {
-    return Intl.message('Pinned', name: 'pinned', desc: '', args: []);
+    return Intl.message(
+      'Pinned',
+      name: 'pinned',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Other Notes`
   String get otherNotes {
-    return Intl.message('Other Notes', name: 'otherNotes', desc: '', args: []);
+    return Intl.message(
+      'Other Notes',
+      name: 'otherNotes',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `No posts yet`
   String get noPostsYet {
-    return Intl.message('No posts yet', name: 'noPostsYet', desc: '', args: []);
+    return Intl.message(
+      'No posts yet',
+      name: 'noPostsYet',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Start the first discussion in the community and share your experience with colleagues.`
@@ -336,12 +472,22 @@ class S {
 
   /// `Post`
   String get createPost {
-    return Intl.message('Post', name: 'createPost', desc: '', args: []);
+    return Intl.message(
+      'Post',
+      name: 'createPost',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `New Post`
   String get newPost {
-    return Intl.message('New Post', name: 'newPost', desc: '', args: []);
+    return Intl.message(
+      'New Post',
+      name: 'newPost',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Image/Video URL`
@@ -356,17 +502,32 @@ class S {
 
   /// `#`
   String get hashtag {
-    return Intl.message('#', name: 'hashtag', desc: '', args: []);
+    return Intl.message(
+      '#',
+      name: 'hashtag',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Share`
   String get share {
-    return Intl.message('Share', name: 'share', desc: '', args: []);
+    return Intl.message(
+      'Share',
+      name: 'share',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Report`
   String get report {
-    return Intl.message('Report', name: 'report', desc: '', args: []);
+    return Intl.message(
+      'Report',
+      name: 'report',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تعليقات ({count})`
@@ -391,47 +552,92 @@ class S {
 
   /// `Quick Calc`
   String get quickCalc2 {
-    return Intl.message('Quick Calc', name: 'quickCalc2', desc: '', args: []);
+    return Intl.message(
+      'Quick Calc',
+      name: 'quickCalc2',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Add`
   String get add {
-    return Intl.message('Add', name: 'add', desc: '', args: []);
+    return Intl.message(
+      'Add',
+      name: 'add',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Calculate`
   String get calculate {
-    return Intl.message('Calculate', name: 'calculate', desc: '', args: []);
+    return Intl.message(
+      'Calculate',
+      name: 'calculate',
+      desc: '',
+      args: [],
+    );
   }
 
   /// ` Passed`
   String get Pass {
-    return Intl.message(' Passed', name: 'Pass', desc: '', args: []);
+    return Intl.message(
+      ' Passed',
+      name: 'Pass',
+      desc: '',
+      args: [],
+    );
   }
 
   /// ` Failed`
   String get Fail {
-    return Intl.message(' Failed', name: 'Fail', desc: '', args: []);
+    return Intl.message(
+      ' Failed',
+      name: 'Fail',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Credits:`
   String get credits {
-    return Intl.message('Credits:', name: 'credits', desc: '', args: []);
+    return Intl.message(
+      'Credits:',
+      name: 'credits',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Light Mode`
   String get lightMode {
-    return Intl.message('Light Mode', name: 'lightMode', desc: '', args: []);
+    return Intl.message(
+      'Light Mode',
+      name: 'lightMode',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Dark Mode`
   String get darkMode {
-    return Intl.message('Dark Mode', name: 'darkMode', desc: '', args: []);
+    return Intl.message(
+      'Dark Mode',
+      name: 'darkMode',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `System Mode`
   String get systemMode {
-    return Intl.message('System Mode', name: 'systemMode', desc: '', args: []);
+    return Intl.message(
+      'System Mode',
+      name: 'systemMode',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `UniSpace does not collect personal data outside Firebase. All data is secure.`
@@ -456,17 +662,32 @@ class S {
 
   /// `Light`
   String get light {
-    return Intl.message('Light', name: 'light', desc: '', args: []);
+    return Intl.message(
+      'Light',
+      name: 'light',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Dark`
   String get dark {
-    return Intl.message('Dark', name: 'dark', desc: '', args: []);
+    return Intl.message(
+      'Dark',
+      name: 'dark',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `System`
   String get system {
-    return Intl.message('System', name: 'system', desc: '', args: []);
+    return Intl.message(
+      'System',
+      name: 'system',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Choose Language`
@@ -481,12 +702,22 @@ class S {
 
   /// `Arabic`
   String get arabic {
-    return Intl.message('Arabic', name: 'arabic', desc: '', args: []);
+    return Intl.message(
+      'Arabic',
+      name: 'arabic',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Register`
   String get register {
-    return Intl.message('Register', name: 'register', desc: '', args: []);
+    return Intl.message(
+      'Register',
+      name: 'register',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Your post has been published ✅`
@@ -511,7 +742,12 @@ class S {
 
   /// `One major`
   String get oneMajor {
-    return Intl.message('One major', name: 'oneMajor', desc: '', args: []);
+    return Intl.message(
+      'One major',
+      name: 'oneMajor',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `No majors yet`
@@ -656,7 +892,12 @@ class S {
 
   /// `Marketing`
   String get marketing {
-    return Intl.message('Marketing', name: 'marketing', desc: '', args: []);
+    return Intl.message(
+      'Marketing',
+      name: 'marketing',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Services Marketing`
@@ -701,12 +942,22 @@ class S {
 
   /// `Finance`
   String get finance {
-    return Intl.message('Finance', name: 'finance', desc: '', args: []);
+    return Intl.message(
+      'Finance',
+      name: 'finance',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Accounting`
   String get accounting {
-    return Intl.message('Accounting', name: 'accounting', desc: '', args: []);
+    return Intl.message(
+      'Accounting',
+      name: 'accounting',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Accounting and Taxation`
@@ -741,7 +992,12 @@ class S {
 
   /// `Economics`
   String get economics {
-    return Intl.message('Economics', name: 'economics', desc: '', args: []);
+    return Intl.message(
+      'Economics',
+      name: 'economics',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Monetary and Financial Economics`
@@ -776,12 +1032,22 @@ class S {
 
   /// `Coef:`
   String get coefficient {
-    return Intl.message('Coef:', name: 'coefficient', desc: '', args: []);
+    return Intl.message(
+      'Coef:',
+      name: 'coefficient',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Close`
   String get close {
-    return Intl.message('Close', name: 'close', desc: '', args: []);
+    return Intl.message(
+      'Close',
+      name: 'close',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Study Results`
@@ -826,12 +1092,22 @@ class S {
 
   /// `Common Core`
   String get commonCore {
-    return Intl.message('Common Core', name: 'commonCore', desc: '', args: []);
+    return Intl.message(
+      'Common Core',
+      name: 'commonCore',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Basic Unit`
   String get basicUnit {
-    return Intl.message('Basic Unit', name: 'basicUnit', desc: '', args: []);
+    return Intl.message(
+      'Basic Unit',
+      name: 'basicUnit',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Methodological Unit`
@@ -876,17 +1152,32 @@ class S {
 
   /// `Law`
   String get law {
-    return Intl.message('Law', name: 'law', desc: '', args: []);
+    return Intl.message(
+      'Law',
+      name: 'law',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Public Law`
   String get publicLaw {
-    return Intl.message('Public Law', name: 'publicLaw', desc: '', args: []);
+    return Intl.message(
+      'Public Law',
+      name: 'publicLaw',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Private Law`
   String get privateLaw {
-    return Intl.message('Private Law', name: 'privateLaw', desc: '', args: []);
+    return Intl.message(
+      'Private Law',
+      name: 'privateLaw',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Advanced Public Law`
@@ -901,7 +1192,12 @@ class S {
 
   /// `Family Law`
   String get familyLaw {
-    return Intl.message('Family Law', name: 'familyLaw', desc: '', args: []);
+    return Intl.message(
+      'Family Law',
+      name: 'familyLaw',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Criminal Law and Criminal Sciences`
@@ -956,7 +1252,12 @@ class S {
 
   /// `Tax Law`
   String get taxLaw {
-    return Intl.message('Tax Law', name: 'taxLaw', desc: '', args: []);
+    return Intl.message(
+      'Tax Law',
+      name: 'taxLaw',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `International Relations`
@@ -991,7 +1292,12 @@ class S {
 
   /// `Contact Us`
   String get contactUs {
-    return Intl.message('Contact Us', name: 'contactUs', desc: '', args: []);
+    return Intl.message(
+      'Contact Us',
+      name: 'contactUs',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Block Account`
@@ -1016,62 +1322,122 @@ class S {
 
   /// `Copy Text`
   String get copyText {
-    return Intl.message('Copy Text', name: 'copyText', desc: '', args: []);
+    return Intl.message(
+      'Copy Text',
+      name: 'copyText',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Hide`
   String get hide {
-    return Intl.message('Hide', name: 'hide', desc: '', args: []);
+    return Intl.message(
+      'Hide',
+      name: 'hide',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Save Post`
   String get savePost {
-    return Intl.message('Save Post', name: 'savePost', desc: '', args: []);
+    return Intl.message(
+      'Save Post',
+      name: 'savePost',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `University`
   String get university {
-    return Intl.message('University', name: 'university', desc: '', args: []);
+    return Intl.message(
+      'University',
+      name: 'university',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Faculty`
   String get faculty {
-    return Intl.message('Faculty', name: 'faculty', desc: '', args: []);
+    return Intl.message(
+      'Faculty',
+      name: 'faculty',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Department`
   String get department {
-    return Intl.message('Department', name: 'department', desc: '', args: []);
+    return Intl.message(
+      'Department',
+      name: 'department',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Major`
   String get major {
-    return Intl.message('Major', name: 'major', desc: '', args: []);
+    return Intl.message(
+      'Major',
+      name: 'major',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Mood`
   String get mood {
-    return Intl.message('Mood', name: 'mood', desc: '', args: []);
+    return Intl.message(
+      'Mood',
+      name: 'mood',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Name`
   String get name {
-    return Intl.message('Name', name: 'name', desc: '', args: []);
+    return Intl.message(
+      'Name',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Posts`
   String get posts {
-    return Intl.message('Posts', name: 'posts', desc: '', args: []);
+    return Intl.message(
+      'Posts',
+      name: 'posts',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Profile`
   String get profile {
-    return Intl.message('Profile', name: 'profile', desc: '', args: []);
+    return Intl.message(
+      'Profile',
+      name: 'profile',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Following`
   String get following {
-    return Intl.message('Following', name: 'following', desc: '', args: []);
+    return Intl.message(
+      'Following',
+      name: 'following',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `User Information`
